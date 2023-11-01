@@ -11,6 +11,8 @@ import {Avatar, Card, Space} from 'antd';
 import RATScreener from "./components/Projects/Rats";
 import Wildfire from "./components/Projects/Wildfire";
 import Solar from "./components/Projects/Solar";
+import DRL from "./components/Projects/DRL";
+
 const {Footer, Sider} = Layout;
 
 export default class App extends React.Component {
@@ -29,23 +31,15 @@ export default class App extends React.Component {
             <div>
                 <BrowserRouter>
                     <Layout className={"all-layout"}>
-                        {/*<Sider trigger={null} collapsible collapsed={this.state.collapsed} width={300}*/}
-                        {/*       style={{backgroundColor: "white"}}>*/}
-                        {/*    <div className="logo" style={{padding: 20}}>*/}
-                        {/*        <Avatar shape="square" size={64} icon={<img src={myIcon} alt="Avatar"/>}/>*/}
-                        {/*    </div>*/}
-                        {/*    <MyMenu></MyMenu>*/}
-                        {/*</Sider>*/}
-
                         <Layout>
                             <Routes>
                                 <Route path="/home" element={<Home/>}/>
                                 <Route path="/RATScreener" element={<RATScreener/>}/>
                                 <Route path="/Wildfire" element={<Wildfire/>}/>
                                 <Route path="/Solar" element={<Solar/>}/>
+                                <Route path="/DRL" element={<DRL/>}/>
                                 <Route path="/" element={<Navigate replace to="/home"/>}/>
                             </Routes>
-
                             <Footer style={{textAlign: 'center'}}>Website©2023 Created by Shengao Yi</Footer>
                         </Layout>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import '../index.css';
-import rats from '../Rats.png';
-import ratsProcess from '../RatsProcess.png';
+import rats from '../images/Rats.png';
+import ratsProcess from '../images/RatsProcess.png';
 import {Breadcrumb, Layout, Row, Tooltip} from "antd";
 import {Link} from "react-router-dom";
 import {Image} from 'antd';
@@ -11,15 +11,8 @@ import markdown from "../../../img/markdown.png";
 const {Content} = Layout;
 
 const RATScreener = () => (
-    <div style={{backgroundColor: "white"}}>
-        <Content className="site-layout-background" style={{
-            margin: '24px 16px',
-            padding: 0,
-            minHeight: 280,
-            // backgroundColor: "white",
-            textAlign: "center"
-        }}
-        >
+    <div className="container-centered">
+        <Content className="site-layout-background content-width">
             <br/>
             <Row>
                 <Breadcrumb

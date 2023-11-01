@@ -74,5 +74,24 @@
     }
 }
 
+/* 这是外部Project 详细页面div的样式 */
+.container-centered {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 如果需要让内容垂直居中, 也可以添加这行 */
+    height: 100%;           /* 如果需要让内容垂直居中, 也可以添加这行 */
+}
+
+/* 这是Content的样式 */
+.content-width {
+    width: 50%;
+    margin: 24px 16px;
+    padding: 0;
+    min-height: 280px;
+    text-align: center;
+}
+
 
 

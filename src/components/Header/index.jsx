@@ -124,7 +124,7 @@ const CustomHeader = () => {
 //                         Projects
 //                     </ScrollLink>
 //                 </Menu.Item>
-//                 <Menu.Item key="3" style={{ color: 'white' }} onClick={() => setSelectedKey('3')}>Publications</Menu.Item>
+//                 <Menu.Item key="3" style={{ color: 'white' }} onClick={() => setSelectedKey('3')}>publications</Menu.Item>
 //             </Menu>
 //         </Header>
 //     );
