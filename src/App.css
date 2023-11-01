@@ -1,5 +1,51 @@
+/*.App {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+/*.all-layout{*/
+/*  background: #fff;*/
+/*  overflow: auto;*/
+/*  font-family: sans-serif;*/
+/*}*/
+
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
 .App {
   text-align: center;
+  max-width: 100vw; /* 确保内容不超出屏幕宽度 */
+  overflow-x: hidden; /* 防止水平滚动 */
 }
 
 .App-logo {
@@ -22,11 +68,36 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem; /* 添加内边距 */
+}
+
+.all-layout {
+  background: #fff;
+  overflow: auto;
+  font-family: sans-serif;
+  user-select: none;
+  cursor: default;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+/* 响应式设计的开始 */
+
+/* 当屏幕宽度小于 768px 时，为手机进行优化 */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 0.5rem; /* 减少内边距 */
+    font-size: calc(8px + 2vmin); /* 调整字体大小 */
+  }
+
+  .App-logo {
+    height: 30vmin; /* 调整logo大小 */
+  }
+}
+
+/* 响应式设计的结束 */
 
 @keyframes App-logo-spin {
   from {
