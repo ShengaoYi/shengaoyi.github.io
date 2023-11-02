@@ -24,8 +24,8 @@ const Projects = () => (
         <Content style={{margin: '24px 16px', padding: 24, background: "white"}}>
             <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider"
                      style={{fontSize: 18, fontWeight: "bold"}}>Data Analytics / Web Development</Divider>
-            <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
-                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
+            <Row gutter={[32, 32]} justify="space-around" align="middle" style={{ maxWidth: '100%', margin: '0 auto' }}>
+                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
                     <Link to="/RATScreener">
                         <MyCard
                             hoverable
@@ -35,7 +35,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
                     <Link to="/Wildfire">
                         <MyCard
                             hoverable
@@ -45,7 +45,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
                     <Link to="/Solar">
                         <MyCard
                             hoverable
@@ -55,7 +55,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
                     <MyCard
                         hoverable
                         imageUrl={house}
