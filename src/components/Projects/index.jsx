@@ -19,12 +19,12 @@ import DRL_paper from './publications/DRL.pdf'
 const {Content} = Layout;
 
 const Projects = () => (
-    <div>
+    <div className="content-centered">
         <Content style={{margin: '24px 16px', padding: 24, background: "white"}}>
             <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider"
                      style={{fontSize: 18, fontWeight: "bold"}}>Data Analytics / Web Development</Divider>
-            <Row gutter={[16, 16]} justify="space-around" align="middle">
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+            <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
                     <Link to="/RATScreener">
                         <MyCard
                             hoverable
@@ -34,7 +34,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
                     <Link to="/Wildfire">
                         <MyCard
                             hoverable
@@ -44,7 +44,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
                     <Link to="/Solar">
                         <MyCard
                             hoverable
@@ -54,7 +54,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={10} lg={10} xl={4} className="centered-content-col">
                     <MyCard
                         hoverable
                         imageUrl={house}
@@ -79,8 +79,8 @@ const Projects = () => (
             {/*</Row>*/}
             <Divider orientation="left" className="dynamic-font-divider"
                      style={{fontSize: 18, fontWeight: "bold"}}>Researches</Divider>
-             <Row gutter={[16, 16]} justify="space-around" align="middle">
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+             <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <Col xs={24} sm={24} md={12} lg={8} xl={4} className="centered-content-col">
                     <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
                         <MyCard
                             hoverable
@@ -106,8 +106,8 @@ const Projects = () => (
             <Divider orientation="left" className="dynamic-font-divider"
                      style={{fontSize: 18, fontWeight: "bold"}}>Funny Tools</Divider>
 
-             <Row gutter={[16, 16]} justify="space-around" align="middle">
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+             <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <Col xs={24} sm={24} md={12} lg={8} xl={4} className="centered-content-col">
                      <a href="https://github.com/ShengaoYi/Google-StreetView-Downloader" target="_blank" rel="noopener noreferrer">
                          <MyCard
                             hoverable

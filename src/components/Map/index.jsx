@@ -155,7 +155,7 @@ export default function Map() {
                                     'properties': {
                                         "title": "Temple",
                                         'description':
-                                            '<div style="font-size: 18px;"><strong>Philadelphia, PA</strong></div><p style="font-size: 15px; font-family: sans-serif">I am an incoming Geography Ph.D. student at Temple University (09.2023-), supervised by <a href="https://www.urbanspatial.info/about.html" target="_blank"> Prof. Xiaojiang Li</a>.</p>',
+                                            '<div style="font-size: 18px;"><strong>Philadelphia, PA</strong></div><p style="font-size: 15px; font-family: sans-serif">I am an Geography Ph.D. student at Temple University (09.2023-), supervised by <a href="https://www.urbanspatial.info" target="_blank"> Prof. Xiaojiang Li</a>.</p>',
                                     },
                                     'geometry': {
                                         'type': 'Point',

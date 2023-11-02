@@ -1,0 +1,33 @@
+.gallery-container {
+    width: 300px; /* 选择您喜欢的宽度 */
+    height: 300px; /* 考虑到图片和文字，选择合适的高度 */
+    border: 1px solid #ddd; /* 可选的边框 */
+    margin: 10px;
+    transition: transform 0.2s; /* 动画效果 */
+}
+
+.gallery-container:hover {
+    transform: scale(1.05); /* 鼠标悬停时的缩放效果 */
+}
+
+.gallery-image {
+    width: 100%;
+    height: 70%; /* 分配大部分高度给图片 */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.gallery-description {
+    padding: 10px;
+    color: black;
+
+}
+
+.gallery-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
