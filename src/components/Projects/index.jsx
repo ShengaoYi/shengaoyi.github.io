@@ -15,6 +15,7 @@ import risk from './images/Risk.png';
 import subsidy from './images/Subsidy.png';
 import DRL from './images/DRL_framework.png'
 import DRL_paper from './publications/DRL.pdf'
+import Frequent_street from './images/Frequent_street.png'
 
 const {Content} = Layout;
 
@@ -89,10 +90,16 @@ const Projects = () => (
                             description="Deep online recommendations for connected E-taxis by coupling trajectory mining and reinforcement learning">
                         </MyCard>
                     </a>
-
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
-
+                    <a href={''} target="_blank" rel="noopener noreferrer">
+                        <MyCard
+                            hoverable
+                            imageUrl={Frequent_street}
+                            title="High Frequency Street"
+                            description="The research introduces a bottom-up approach to road classification using urban behaviors and proposes a PEP (People-Environment-Program) evaluation system.">
+                        </MyCard>
+                    </a>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
 
