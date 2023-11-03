@@ -55,22 +55,28 @@
     display: flex;
     justify-content: center;
 }
+
 .dynamic-font-divider {
-    font-size: 20px; /* 默认字体大小 */
-    font-weight: bold;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: white !important;
 }
 
 /* 当屏幕宽度介于600px和900px之间时 */
 @media (min-width: 600px) and (max-width: 900px) {
     .dynamic-font-divider {
-        font-size: 18px;
+        font-size: 20px !important;
+        font-weight: bold !important;
+        color: white !important;
     }
 }
 
 /* 当屏幕宽度大于900px时 */
 @media (min-width: 900px) {
     .dynamic-font-divider {
-        font-size: 20px;
+        font-size: 20px !important;
+    font-weight: bold !important;
+    color: white !important;
     }
 }
 
@@ -94,7 +100,8 @@
 }
 
 .content-centered {
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto; /* 使内容水平居中 */
 }
 

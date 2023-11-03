@@ -72,9 +72,8 @@
 }
 
 .all-layout {
-  background: #fff;
   overflow: auto;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   user-select: none;
   cursor: default;
 }

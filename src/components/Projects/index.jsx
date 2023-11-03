@@ -21,11 +21,10 @@ const {Content} = Layout;
 
 const Projects = () => (
     <div className="content-centered">
-        <Content style={{margin: '24px 16px', padding: 24, background: "white"}}>
-            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider"
-                     style={{fontSize: 18, fontWeight: "bold"}}>Data Analytics / Web Development</Divider>
-            <Row gutter={[32, 32]} justify="space-around" align="middle" style={{ maxWidth: '100%', margin: '0 auto' }}>
-                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
+        <Content style={{margin: '24px 16px', padding: 24, background: "#2c2c2c"}}>
+            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Data Analytics / Web Development</Divider>
+            <Row gutter={[32, 32]} justify="space-evenly" align="top" style={{ maxWidth: '100%', margin: '0 auto' }}>
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                     <Link to="/RATScreener">
                         <MyCard
                             hoverable
@@ -35,7 +34,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                     <Link to="/Wildfire">
                         <MyCard
                             hoverable
@@ -45,7 +44,7 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                     <Link to="/Solar">
                         <MyCard
                             hoverable
@@ -55,33 +54,13 @@ const Projects = () => (
                         </MyCard>
                     </Link>
                 </Col>
-                <Col xs={24} sm={12} md={8} lg={8} xl={4} className="centered-content-col">
-                    <MyCard
-                        hoverable
-                        imageUrl={house}
-                        title="House Values Prediction"
-                        description="Predict house values with spatial lag, spatial error and geographically weighted regression (GWR) in Philadelphia.">
-                    </MyCard>
-                </Col>
             </Row>
             <br/>
 
             <br/>
-            {/*<Row gutter={[16, 16]} justify="space-around" align="middle">*/}
-            {/*    <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">*/}
-            {/*        <MyCard*/}
-            {/*            hoverable*/}
-            {/*            imageUrl={logit}*/}
-            {/*            title="Logistic Regression"*/}
-            {/*            description="Using logistic regression to examine the predictors of car crashes caused by alcohol.">*/}
-            {/*        </MyCard>*/}
-            {/*    </Col>*/}
-
-            {/*</Row>*/}
-            <Divider orientation="left" className="dynamic-font-divider"
-                     style={{fontSize: 18, fontWeight: "bold"}}>Researches</Divider>
-             <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
-                <Col xs={24} sm={24} md={12} lg={8} xl={4} className="centered-content-col">
+            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Researches</Divider>
+             <Row gutter={[32, 32]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                     <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
                         <MyCard
                             hoverable
@@ -91,7 +70,7 @@ const Projects = () => (
                         </MyCard>
                     </a>
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                     <a href={''} target="_blank" rel="noopener noreferrer">
                         <MyCard
                             hoverable
@@ -101,20 +80,16 @@ const Projects = () => (
                         </MyCard>
                     </a>
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
-
-                </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
 
                 </Col>
 
             </Row>
 
-            <Divider orientation="left" className="dynamic-font-divider"
-                     style={{fontSize: 18, fontWeight: "bold"}}>Funny Tools</Divider>
+            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Funny Tools</Divider>
 
-             <Row gutter={[16, 16]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
-                <Col xs={24} sm={24} md={12} lg={8} xl={4} className="centered-content-col">
+             <Row gutter={[32, 32]} justify="space-around" align="middle" style={{ maxWidth: '90%', margin: '0 auto' }}>
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
                      <a href="https://github.com/ShengaoYi/Google-StreetView-Downloader" target="_blank" rel="noopener noreferrer">
                          <MyCard
                             hoverable
@@ -125,15 +100,13 @@ const Projects = () => (
                      </a>
 
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
 
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
+                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
 
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={6} xl={4} className="centered-content-col">
 
-                </Col>
 
             </Row>
         </Content>

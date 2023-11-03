@@ -4,7 +4,7 @@ import Projects from "../../Projects";
 import React from "react";
 import {Route} from "react-router-dom";
 import CustomHeader from "../../Header";
-
+import './index.css';
 const { Content } = Layout;
 
 const Home = () => (

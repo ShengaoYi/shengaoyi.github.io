@@ -17,7 +17,7 @@ export default function Map() {
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainer.current,
-            style: "mapbox://styles/mapbox/light-v9",
+            style: "mapbox://styles/mapbox/dark-v9",
             center: [lng, lat],
             zoom: zoom,
             maxBounds: bounds,
@@ -195,6 +195,9 @@ export default function Map() {
                             "text-offset": [0, 1],
                             "text-variable-anchor": ["top", "bottom", "left"],
                         },
+                        paint: {
+                            "text-color": "#ffffff" // 设置文字颜色为白色
+                        }
                     });
                 }
             );

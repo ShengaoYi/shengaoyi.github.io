@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import {Layout} from 'antd';
 import {Provider} from 'react-redux';
-
 import MyMenu from "./components/Menu";
 import myIcon from './img/Avatar.jpg';
 import Home from "./components/pages/Home";
@@ -40,13 +39,10 @@ export default class App extends React.Component {
                                 <Route path="/DRL" element={<DRL/>}/>
                                 <Route path="/" element={<Navigate replace to="/home"/>}/>
                             </Routes>
-                            <Footer style={{textAlign: 'center'}}>Website©2023 Created by Shengao Yi</Footer>
+                            <Footer style={{textAlign: 'center', background: "black", color: "white"}}>Website©2023 Created by Shengao Yi</Footer>
                         </Layout>
-
                     </Layout>
                 </BrowserRouter>
-
-
             </div>
         )
     }

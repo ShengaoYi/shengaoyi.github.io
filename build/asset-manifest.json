@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.36203055.css",
-    "main.js": "/static/js/main.ca762dba.js",
+    "main.css": "/static/css/main.5d5f448a.css",
+    "main.js": "/static/js/main.c2f8f2f5.js",
     "static/js/787.460c28a1.chunk.js": "/static/js/787.460c28a1.chunk.js",
     "static/media/Solar.png": "/static/media/Solar.0dcc1d1f7d2866c7ee8a.png",
     "static/media/Wildfire.gif": "/static/media/Wildfire.007fdc9dbd2906c58032.gif",
@@ -13,6 +13,7 @@
     "static/media/Farms.png": "/static/media/Farms.1fd3d7f1a0498154011e.png",
     "static/media/RatsProcess.png": "/static/media/RatsProcess.d9b6a12f4aa82d7aee8c.png",
     "static/media/Avatar.jpg": "/static/media/Avatar.680f0f92e3f2e982f03d.jpg",
+    "static/media/Frequent_street.png": "/static/media/Frequent_street.4a93f05b12a2527b97c5.png",
     "static/media/Fire2.png": "/static/media/Fire2.1113343454d873fd8ad7.png",
     "static/media/Subsidy.png": "/static/media/Subsidy.d554ade8d27787851f2a.png",
     "static/media/Rats.png": "/static/media/Rats.fc6e4038c55652e57d92.png",
@@ -24,12 +25,12 @@
     "static/media/LI.png": "/static/media/LI.a95afc06831647f5fca2.png",
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
-    "main.36203055.css.map": "/static/css/main.36203055.css.map",
-    "main.ca762dba.js.map": "/static/js/main.ca762dba.js.map",
+    "main.5d5f448a.css.map": "/static/css/main.5d5f448a.css.map",
+    "main.c2f8f2f5.js.map": "/static/js/main.c2f8f2f5.js.map",
     "787.460c28a1.chunk.js.map": "/static/js/787.460c28a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36203055.css",
-    "static/js/main.ca762dba.js"
+    "static/css/main.5d5f448a.css",
+    "static/js/main.c2f8f2f5.js"
   ]
 }
