@@ -20,9 +20,6 @@ const MyCard = (props) => (
             />
         </div>
     </Card>
-
-
-
 );
 
 export default MyCard;

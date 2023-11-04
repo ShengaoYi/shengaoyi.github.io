@@ -104,3 +104,30 @@
     width: 90%;
     margin: 0 auto; /* 使内容水平居中 */
 }
+.custom-dots {
+    position: absolute;
+    bottom: -25px !important; /* Adjust this value as needed to move the dots down */
+    width: 100%;
+}
+
+.custom-dots li button {
+    background: #ccc; /* Non-active dot color */
+}
+
+.custom-dots li.slick-active button {
+    background: #222; /* Active dot color */
+}
+
+/* Additional styles for dot size, spacing, etc. */
+.custom-dots li button {
+    border: 0;
+    height: 10px;
+    width: 10px;
+}
+
+/* To ensure dots are visible over the carousel if needed */
+.custom-dots li {
+    margin: 0 3px;
+    z-index: 1;
+}
+
