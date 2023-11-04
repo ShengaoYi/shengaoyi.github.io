@@ -11,7 +11,7 @@ import RATScreener from "./components/Projects/Rats";
 import Wildfire from "./components/Projects/Wildfire";
 import Solar from "./components/Projects/Solar";
 import DRL from "./components/Projects/DRL";
-
+import MyFooter from "./components/Footer";
 const {Footer, Sider} = Layout;
 
 export default class App extends React.Component {
@@ -39,7 +39,7 @@ export default class App extends React.Component {
                                 <Route path="/DRL" element={<DRL/>}/>
                                 <Route path="/" element={<Navigate replace to="/home"/>}/>
                             </Routes>
-                            <Footer style={{textAlign: 'center', background: "black", color: "white"}}>Website©2023 Created by Shengao Yi</Footer>
+                            <Footer className="custom-footer" style={{textAlign: 'center', background: "black", color: "white"}}>Copyright © Shengao Yi, 2023</Footer>
                         </Layout>
                     </Layout>
                 </BrowserRouter>

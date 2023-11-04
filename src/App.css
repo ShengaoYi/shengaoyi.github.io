@@ -106,3 +106,18 @@
     transform: rotate(360deg);
   }
 }
+.custom-footer {
+    position: relative;
+    border-top: 1px solid transparent;  /* 这样footer保持相同的高度 */
+}
+
+.custom-footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}

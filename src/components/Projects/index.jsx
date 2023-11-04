@@ -100,12 +100,27 @@ const Projects = () => (
                      </a>
 
                 </Col>
-                <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-
+                 <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
+                    {/*<Link to="/RATScreener">*/}
+                    {/*    <MyCard*/}
+                    {/*        hoverable*/}
+                    {/*        imageUrl={rats}*/}
+                    {/*        title="RATScreener"*/}
+                    {/*        description="A Vermin Inspection Optimization Tool for Washington, DC">*/}
+                    {/*    </MyCard>*/}
+                    {/*</Link>*/}
                 </Col>
                 <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-
+                    {/*<Link to="/Wildfire">*/}
+                    {/*    <MyCard*/}
+                    {/*        hoverable*/}
+                    {/*        imageUrl={wildfire}*/}
+                    {/*        title="Wildfire Risk Prediction"*/}
+                    {/*        description="Forecasting Wildfire Risk in California">*/}
+                    {/*    </MyCard>*/}
+                    {/*</Link>*/}
                 </Col>
+
 
 
             </Row>
