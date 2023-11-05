@@ -22,7 +22,7 @@ const {Content} = Layout;
 const Projects = () => (
     <div className="content-centered">
         <Content style={{margin: '24px 16px', padding: 24, background: "#2c2c2c"}}>
-            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Data Analytics</Divider>
+            <Divider id="data-analytics" orientation="left" className="dynamic-font-divider">Data Analytics</Divider>
             <Carousel dots={{ className: 'custom-dots' }} draggable>
                 <div>
                     <Row gutter={[32, 32]} justify="space-evenly" align="top">
@@ -94,7 +94,7 @@ const Projects = () => (
                 </div>
             </Carousel>
             <br/>
-            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Researches</Divider>
+            <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
             <Carousel dots={{ className: 'custom-dots' }} draggable>
                 <div>
                     <Row gutter={[32, 32]} justify="space-evenly" align="top">
@@ -139,7 +139,7 @@ const Projects = () => (
                 {/*</div>*/}
             </Carousel>
             <br/>
-            <Divider id="data-analytics-web-development" orientation="left" className="dynamic-font-divider">Funny Tools</Divider>
+            <Divider id="funny-tool" orientation="left" className="dynamic-font-divider">Funny Tools</Divider>
             <Carousel dots={{ className: 'custom-dots' }} draggable>
                 <div>
                     <Row gutter={[32, 32]} justify="space-evenly" align="top">

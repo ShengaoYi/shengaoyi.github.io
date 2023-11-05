@@ -15,16 +15,16 @@ const Solar = () => (
         <Content className="site-layout-background content-width">
             <br/>
             <Row>
-                <Breadcrumb
+                <Breadcrumb className="custom-breadcrumb"
                     items={[
                         {
                             title: <Link to="/home">Home</Link>,
                         },
                         {
-                            title: <a href="">Data Analytics/ Web Development</a>,
+                            title: <a href="">Data Analytics</a>,
                         },
                         {
-                            title: 'Solar Operation',
+                            title: <span>Solar Operation</span>,
                         },
                     ]}
                 />

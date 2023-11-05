@@ -12,26 +12,26 @@ const {Content} = Layout;
 
 const Wildfire = () => (
     <div className="container-centered">
-        <Content className="site-layout-background content-width">
+        <Content className="content-width">
             <br/>
             <Row>
-                <Breadcrumb
+                <Breadcrumb className="custom-breadcrumb"
                     items={[
-                        {
-                            title: <Link to="/home">Home</Link>,
-                        },
-                        {
-                            title: <a href="">Data Analytics/ Web Development</a>,
-                        },
-                        {
-                            title: 'Wildfire',
-                        },
-                    ]}
+                    {
+                      title: <Link to="/home">Home</Link>,
+                    },
+                    {
+                      title: <a href="">Data Analytics</a>,
+                    },
+                    {
+                      title: <span>Wildfire</span>,
+                    },
+                  ]}
                 />
             </Row>
 
             <div className="project-image">
-                <Image width={650} src={wildfire} preview={false}/>
+                <Image src={wildfire} preview={false}/>
             </div>
             <div className="title">
                 <h1>Wildfire Prediction in California</h1>

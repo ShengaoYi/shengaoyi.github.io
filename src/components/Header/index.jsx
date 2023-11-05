@@ -31,12 +31,14 @@ const CustomHeader = () => {
                 </ScrollLink>
             </Menu.Item>
             <Menu.Item key="2" style={{ color: 'white' }} >
-                <ScrollLink to="data-analytics-web-development" smooth={true} duration={500} offset={-100} onClick={() => setSelectedKey('2')}>
+                <ScrollLink to="data-analytics" smooth={true} duration={500} offset={-100} onClick={() => setSelectedKey('2')}>
                     Projects
                 </ScrollLink>
             </Menu.Item>
             <Menu.Item key="3" style={{ color: 'white' }} onClick={() => setSelectedKey('3')}>
-                Publications
+                <ScrollLink to="researches" smooth={true} duration={500} offset={-100} onClick={() => setSelectedKey('3')}>
+                    Researches
+                </ScrollLink>
             </Menu.Item>
             <Menu.Item key="4" style={{ color: 'white' }} onClick={() => setSelectedKey('4')}>
                 About

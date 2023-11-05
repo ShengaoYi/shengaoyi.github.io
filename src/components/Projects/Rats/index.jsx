@@ -15,23 +15,23 @@ const RATScreener = () => (
         <Content className="site-layout-background content-width">
             <br/>
             <Row>
-                <Breadcrumb
+                <Breadcrumb className="custom-breadcrumb"
                     items={[
                         {
                             title: <Link to="/home">Home</Link>,
                         },
                         {
-                            title: <a href="">Data Analytics/ Web Development</a>,
+                            title: <a href="">Data Analytics</a>,
                         },
                         {
-                            title: 'RATScreener',
+                            title: <span>RATScreener</span>,
                         },
                     ]}
                 />
             </Row>
 
             <div className="project-image">
-                <Image width={500} src={rats} preview={false}/>
+                <Image src={rats} preview={false}/>
             </div>
             <div className="title">
                 <h1>RATScreener</h1>
