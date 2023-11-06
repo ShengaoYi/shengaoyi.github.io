@@ -5,3 +5,42 @@
     font-stretch: normal;
     background-color: black;
 }
+.home-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  height: auto;
+  color: white;
+}
+
+.map-container,
+.profile-container {
+  flex-basis: 50%; /* 默认情况下各占一半宽度 */
+  height: 70vh; /* 或者根据需要调整 */
+}
+
+@media (max-width: 768px) { /* 举例，您可以根据实际情况调整断点 */
+  .map-container,
+  .profile-container {
+    flex-basis: 100%; /* 在小屏幕上占满整行 */
+    height: auto; /* 高度自适应 */
+  }
+}
+/* Profile container with dark theme and white text */
+.profile-container {
+  color: #FFFFFF;
+  background-color: #000000;
+  font-family: 'Arial', sans-serif;
+  padding: 0 40px 0 40px;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 50%; /* Or adjust to your preference for the width */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    max-width: 100%;
+  }
+}
+

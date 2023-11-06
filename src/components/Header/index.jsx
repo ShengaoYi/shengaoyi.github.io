@@ -41,7 +41,9 @@ const CustomHeader = () => {
                 </ScrollLink>
             </Menu.Item>
             <Menu.Item key="4" style={{ color: 'white' }} onClick={() => setSelectedKey('4')}>
-                About
+                <ScrollLink to="about" smooth={true} duration={500} offset={-100} onClick={() => setSelectedKey('4')}>
+                    About
+                </ScrollLink>
             </Menu.Item>
         </Menu>
     );

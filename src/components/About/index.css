@@ -1,0 +1,51 @@
+.resume-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resume-item-title {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.resume-item-time {
+  /* The date stays to the right; you can adjust the width as needed */
+  min-width: 120px;
+  text-align: right;
+}
+
+.profile-container h1 {
+  text-align: center;
+}
+
+.profile-container h2 {
+  font-size: 1.5em;
+  /*border-bottom: 1px solid #ddd;*/
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.profile-container ul {
+  list-style: none; /* 移除默认的列表符号 */
+  padding-left: 20px; /* 添加缩进 */
+}
+
+.profile-container li::before {
+  content: '•'; /* 这是一个黑色圆点 */
+  color: white; /* 可以改变颜色 */
+  display: inline-block;
+  width: 1em; /* 给点和文字留出空间 */
+  margin-left: 0em; /* 将点移回文本的左边 */
+}
+
+.profile-container li {
+  margin-bottom: 10px;
+}
+
+.profile-container h1 {
+  color: #FFFFFF;
+  border-bottom: 2px solid #646464; /* Light grey line for the heading */
+  padding-bottom: 10px;
+}

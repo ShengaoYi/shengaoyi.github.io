@@ -10,8 +10,8 @@ export default function Map() {
     const [lat, setLat] = useState(33.21354494699025);
     const [zoom, setZoom] = useState(1.3);
     const [bounds] = useState([
-        [-160, -90], // Southwest coordinates
-        [200, 90] // Northeast coordinates
+        [-120, -60], // Southwest coordinates
+        [180, 70] // Northeast coordinates
     ]);
 
     useEffect(() => {
@@ -239,7 +239,7 @@ export default function Map() {
 
     return (
         <div>
-            <div ref={mapContainer} className="map-container"/>
+            <div ref={mapContainer} className="map"/>
         </div>
     );
 }

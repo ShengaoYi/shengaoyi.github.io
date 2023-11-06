@@ -5,14 +5,18 @@ import React from "react";
 import {Route} from "react-router-dom";
 import CustomHeader from "../../Header";
 import './index.css';
+import About from "../../About";
 const { Content } = Layout;
 
 const Home = () => (
     <div id="top">
          <CustomHeader />
-         <Content style={{ padding: 0, margin: 0, marginTop: '60px'}}>
-            <div style={{ width: '100%', height: '70vh' }}>
-                <Map />
+         <Content className="home-content" >
+             <div className="map-container">
+                  <Map />
+             </div>
+             <div className="profile-container">
+                 <About></About>
             </div>
         </Content>
         <Projects></Projects>
