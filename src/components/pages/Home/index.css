@@ -10,6 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 60px;
+  align-items: stretch;
   height: auto;
   color: white;
 }
@@ -17,14 +18,14 @@
 .map-container,
 .profile-container {
   flex-basis: 50%; /* 默认情况下各占一半宽度 */
-  height: 70vh; /* 或者根据需要调整 */
+  /*min-height: 70vh; !* 或者根据需要调整 *!*/
 }
 
 @media (max-width: 768px) { /* 举例，您可以根据实际情况调整断点 */
   .map-container,
   .profile-container {
     flex-basis: 100%; /* 在小屏幕上占满整行 */
-    height: auto; /* 高度自适应 */
+    min-height: 70vh; /* 高度自适应 */
   }
 }
 /* Profile container with dark theme and white text */

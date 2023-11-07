@@ -49,3 +49,50 @@
   border-bottom: 2px solid #646464; /* Light grey line for the heading */
   padding-bottom: 10px;
 }
+
+/* SocialLinks.css */
+.social-links {
+  display: flex;
+  justify-content: center; /* 按需调整对齐方式 */
+  align-items: center;
+  gap: 20px; /* 按需调整图标之间的间隔 */
+  margin-bottom: 20px; /* 在社交链接和下面的内容之间添加空间 */
+}
+
+.social-links a {
+  color: white; /* 可以根据你的网站主题颜色调整 */
+  font-size: 24px; /* 调整图标大小 */
+  transition: color 0.3s; /* 过渡效果，使鼠标悬浮时颜色变化更平滑 */
+}
+
+.social-links a:hover {
+  color: #007bff; /* 鼠标悬浮时图标的颜色 */
+}
+
+.social-links a:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.social-links svg {
+  margin-right: 8px; /* 如果邮件图标和文字都显示，调整间距 */
+}
+
+/* 你可能需要覆盖Ant Design的默认样式来匹配你的设计 */
+.social-links .ant-btn-primary {
+  margin-right: 8px; /* 或者根据需要调整间距 */
+  background-color: #333; /* 按钮背景色 */
+  border-color: #333; /* 按钮边框色 */
+  color: #fff; /* 文字颜色 */
+}
+
+.social-links .ant-btn-primary:hover,
+.social-links .ant-btn-primary:focus {
+  background-color: #555; /* 鼠标悬停和聚焦时的背景色 */
+  border-color: #555; /* 鼠标悬停和聚焦时的边框色 */
+}
+
+/* 适配Ant Design图标与文字的排列 */
+.social-links .ant-btn .anticon + span {
+  margin-left: 4px; /* 图标和文字之间的间距 */
+}

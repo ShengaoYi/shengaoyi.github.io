@@ -1,9 +1,27 @@
 import React from 'react';
-import './index.css'
+import './index.css';
+import { Button } from 'antd';
+import { GithubOutlined, LinkedinOutlined, MailOutlined, FileTextOutlined } from '@ant-design/icons';
+
 
 const About = () => (
   <div id="about">
       <h1 id="about">About Me</h1>
+      <div className="social-links">
+          <a href="https://github.com/ShengaoYi" target="_blank" className="social-link">
+              <GithubOutlined />
+          </a>
+          <a href="https://www.linkedin.com/in/shengao-yi-918738236/" target="_blank" className="social-link">
+              <LinkedinOutlined />
+          </a>
+          <a href="mailto:yishengao@alumni.upenn.edu" className="social-link">
+              <MailOutlined />
+              yishengao@alumni.upenn.edu
+          </a>
+          <Button type="primary" icon={<FileTextOutlined />} href="/path-to-cv.pdf" target="_blank">
+              CV
+          </Button>
+      </div>
       <section>
           <h2>Education</h2>
           <div className="resume-item">

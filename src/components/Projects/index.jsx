@@ -6,7 +6,7 @@ import rats from './images/Rats.png';
 import wildfire from './images/Wildfire.gif';
 import solar from './images/Solar.png';
 import svi from './images/StreetView.jpg';
-import house from './images/House.png';
+import pgRouting from './images/pgRouting.png';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -109,7 +109,7 @@ const Projects = () => (
                             </a>
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <a href={''} target="_blank" rel="noopener noreferrer">
+                            <a href={'https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10000232&AN=171793816&h=Szz13CBriVmeoTOHKt6PNEP1awcu3RbygOnwpJWcgFW7fIs2QzTvdp2bX7L6IDvceRDK7yQHrVReJeYM6cqpcQ%3D%3D&crl=c'} target="_blank" rel="noopener noreferrer">
                                 <MyCard
                                     hoverable
                                     imageUrl={Frequent_street}
@@ -154,6 +154,14 @@ const Projects = () => (
                             </a>
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
+                            <a href="https://github.com/ShengaoYi/pgRouting_tutorial" target="_blank" rel="noopener noreferrer">
+                                <MyCard
+                                    hoverable
+                                    imageUrl={pgRouting}
+                                    title="pgRouting Tutorial"
+                                    description="This tutorial provides practical guidance on implementing network routing with pgRouting, an extension of PostGIS and PostgreSQL.">
+                                </MyCard>
+                            </a>
 
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
