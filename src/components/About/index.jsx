@@ -7,6 +7,7 @@ import { GithubOutlined, LinkedinOutlined, MailOutlined, FileTextOutlined } from
 const About = () => (
   <div id="about">
       <h1 id="about">About Me</h1>
+
       <div className="social-links">
           <a href="https://github.com/ShengaoYi" target="_blank" className="social-link">
               <GithubOutlined />

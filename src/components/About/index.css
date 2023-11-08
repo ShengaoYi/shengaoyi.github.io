@@ -51,17 +51,52 @@
 }
 
 /* SocialLinks.css */
+/*.social-links {*/
+/*  display: flex;*/
+/*  justify-content: center; !* 或者 'flex-start' 以左对齐 *!*/
+/*  flex-wrap: wrap; !* 允许内容换行 *!*/
+/*  gap: 10px; !* 间隔可以根据您的设计调整 *!*/
+/*  padding: 10px; !* 添加一些内边距 *!*/
+/*  box-sizing: border-box; !* 确保内边距不影响总宽度 *!*/
+/*}*/
+
 .social-links {
   display: flex;
-  justify-content: center; /* 按需调整对齐方式 */
-  align-items: center;
-  gap: 20px; /* 按需调整图标之间的间隔 */
-  margin-bottom: 20px; /* 在社交链接和下面的内容之间添加空间 */
+  justify-content: center; /* 水平居中 */
+  flex-wrap: wrap; /* 允许内容换行 */
+  gap: 10px; /* 间隔可以根据您的设计调整 */
+  padding: 10px; /* 添加一些内边距 */
+  box-sizing: border-box; /* 确保内边距不影响总宽度 */
+}
+
+/* 在小屏幕上的样式 */
+@media screen and (max-width: 768px) {
+  .social-links {
+    justify-content: flex-start; /* 在小屏幕上左对齐 */
+    gap: 5px; /* 减小间隔 */
+  }
+
+  .social-links a {
+    margin-bottom: 5px; /* 减小垂直间隔 */
+    padding: 5px; /* 减小按钮的内边距 */
+    flex-grow: 1; /* 允许按钮填充可用空间 */
+    font-size: 10px;
+  }
+
+  /*如果你希望在小屏幕上图标和文字在一行显示，取消这部分的注释*/
+  .social-links .ant-btn {
+    flex-direction: row;
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
 }
 
 .social-links a {
+  display: flex;
+  align-items: center;
   color: white; /* 可以根据你的网站主题颜色调整 */
-  font-size: 24px; /* 调整图标大小 */
+  font-size: 20px; /* 调整图标大小 */
   transition: color 0.3s; /* 过渡效果，使鼠标悬浮时颜色变化更平滑 */
 }
 
