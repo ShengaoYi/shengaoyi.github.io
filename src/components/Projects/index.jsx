@@ -21,169 +21,90 @@ const {Content} = Layout;
 
 const Projects = () => (
     <div className="content-centered">
-        <Content style={{margin: '24px 16px', padding: 24, background: "#2c2c2c"}}>
+        <Content style={{margin: '24px 16px', padding: 24, background: "black"}}>
             <Divider id="data-analytics" orientation="left" className="dynamic-font-divider">Data Analytics</Divider>
-            <Carousel dots={{ className: 'custom-dots' }} draggable>
-                <div>
-                    <Row gutter={[32, 32]} justify="space-evenly" align="top">
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/RATScreener">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={rats}
-                                    title="RATScreener"
-                                    description="A Vermin Inspection Optimization Tool for Washington, DC">
-                                </MyCard>
-                            </Link>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/Wildfire">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={wildfire}
-                                    title="Wildfire Risk Prediction"
-                                    description="Forecasting Wildfire Risk in California">
-                                </MyCard>
-                             </Link>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/Solar">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={solar}
-                                    title="Solar Operation"
-                                    description="An Application to Calculate Solar Roof Savings: Estimate Potential Cost Savings for Building Owners and Our Community.">
-                                </MyCard>
-                            </Link>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row gutter={[32, 32]} justify="space-evenly" align="top">
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/RATScreener">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={rats}
-                                    title="RATScreener"
-                                    description="A Vermin Inspection Optimization Tool for Washington, DC">
-                                </MyCard>
-                            </Link>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/Wildfire">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={wildfire}
-                                    title="Wildfire Risk Prediction"
-                                    description="Forecasting Wildfire Risk in California">
-                                </MyCard>
-                             </Link>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <Link to="/Solar">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={solar}
-                                    title="Solar Operation"
-                                    description="An Application to Calculate Solar Roof Savings: Estimate Potential Cost Savings for Building Owners and Our Community.">
-                                </MyCard>
-                            </Link>
-                        </Col>
-                    </Row>
-                </div>
-            </Carousel>
+            <div className="image-grid">
+                <Link to="/RATScreener">
+                    <MyCard
+                        hoverable
+                        imageUrl={rats}
+                        title="A Vermin Inspection Optimization Tool"
+                        description="Machine learning, Data analysis">
+                    </MyCard>
+                </Link>
+                <Link to="/Wildfire">
+                    <MyCard
+                        hoverable
+                        imageUrl={wildfire}
+                        title="Forecasting Wildfire Risk in California"
+                        description="Machine Learning, Data analysis">
+                    </MyCard>
+                </Link>
+                <Link to="/Solar">
+                    <MyCard
+                        hoverable
+                        imageUrl={solar}
+                        title="Solar Operation"
+                        description="">
+                    </MyCard>
+                </Link>
+                <Link to="/Wildfire">
+                    <MyCard
+                        hoverable
+                        imageUrl={wildfire}
+                        title="Wildfire Risk Prediction"
+                        description="Forecasting Wildfire Risk in California">
+                    </MyCard>
+                </Link>
+                <Link to="/Wildfire">
+                    <MyCard
+                        hoverable
+                        imageUrl={wildfire}
+                        title="Wildfire Risk Prediction"
+                        description="Forecasting Wildfire Risk in California">
+                    </MyCard>
+                </Link>
+            </div>
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
-            <Carousel dots={{ className: 'custom-dots' }} draggable>
-                <div>
-                    <Row gutter={[32, 32]} justify="space-evenly" align="top">
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={DRL}
-                                    title="Deep Reinforcement Learning"
-                                    description="Deep online recommendations for connected E-taxis by coupling trajectory mining and reinforcement learning">
-                                </MyCard>
-                            </a>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <a href={'https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10000232&AN=171793816&h=Szz13CBriVmeoTOHKt6PNEP1awcu3RbygOnwpJWcgFW7fIs2QzTvdp2bX7L6IDvceRDK7yQHrVReJeYM6cqpcQ%3D%3D&crl=c'} target="_blank" rel="noopener noreferrer">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={Frequent_street}
-                                    title="High Frequency Street"
-                                    description="The research introduces a bottom-up approach to road classification using urban behaviors and proposes a PEP (People-Environment-Program) evaluation system.">
-                                </MyCard>
-                            </a>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-
-
-                        </Col>
-                    </Row>
-                </div>
-                {/*<div>*/}
-                {/*    <Row gutter={[32, 32]} justify="space-evenly" align="top">*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*    </Row>*/}
-                {/*</div>*/}
-            </Carousel>
+            <div className="image-grid">
+                <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={DRL}
+                        title="Deep online recommendations system for connected E-taxis"
+                        description="Deep reinforcement learning">
+                    </MyCard>
+                </a>
+                <a href={'https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10000232&AN=171793816&h=Szz13CBriVmeoTOHKt6PNEP1awcu3RbygOnwpJWcgFW7fIs2QzTvdp2bX7L6IDvceRDK7yQHrVReJeYM6cqpcQ%3D%3D&crl=c'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={Frequent_street}
+                        title="High Frequency Street"
+                        description="">
+                    </MyCard>
+                </a>
+            </div>
             <br/>
             <Divider id="funny-tool" orientation="left" className="dynamic-font-divider">Funny Tools</Divider>
-            <Carousel dots={{ className: 'custom-dots' }} draggable>
-                <div>
-                    <Row gutter={[32, 32]} justify="space-evenly" align="top">
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <a href="https://github.com/ShengaoYi/Google-StreetView-Downloader" target="_blank" rel="noopener noreferrer">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={svi}
-                                    title="Google StreetView Downloader"
-                                    description="A complete workflow for downloading Google Street View images, covering the entire process from the road network to saving the images.">
-                                </MyCard>
-                            </a>
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-                            <a href="https://github.com/ShengaoYi/pgRouting_tutorial" target="_blank" rel="noopener noreferrer">
-                                <MyCard
-                                    hoverable
-                                    imageUrl={pgRouting}
-                                    title="pgRouting Tutorial"
-                                    description="This tutorial provides practical guidance on implementing network routing with pgRouting, an extension of PostGIS and PostgreSQL.">
-                                </MyCard>
-                            </a>
-
-                        </Col>
-                        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">
-
-
-                        </Col>
-                    </Row>
-                </div>
-                {/*<div>*/}
-                {/*    <Row gutter={[32, 32]} justify="space-evenly" align="top">*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*        <Col xs={24} sm={12} md={12} lg={8} xl={4} className="centered-content-col">*/}
-
-                {/*        </Col>*/}
-                {/*    </Row>*/}
-                {/*</div>*/}
-            </Carousel>
+            <div className="image-grid">
+                 <a href="https://github.com/ShengaoYi/Google-StreetView-Downloader" target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={svi}
+                        title="Google StreetView Downloader"
+                        description="Google Street View images, Road Network">
+                    </MyCard>
+                </a>
+                    <a href="https://github.com/ShengaoYi/pgRouting_tutorial" target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={pgRouting}
+                        title="pgRouting Tutorial"
+                        description="Network Analysis, PostGIS, PostgreSQL">
+                    </MyCard>
+                </a>
+            </div>
         </Content>
     </div>
 );

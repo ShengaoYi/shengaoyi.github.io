@@ -152,8 +152,7 @@
     }
 }
 .content-centered {
-    max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto; /* 使内容水平居中 */
 }
 .custom-dots {
@@ -183,3 +182,56 @@
     z-index: 1;
 }
 
+.ant-divider-horizontal.ant-divider-with-text-left::before,
+.ant-divider-horizontal.ant-divider-with-text-left::after {
+  flex: 0; /* Equal flex-grow value for both lines */
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  margin-right: 8px; /* Or any space you want between the line and the text */
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left::after {
+  margin-left: 8px; /* Or any space you want between the text and the line */
+}
+
+:where(.css-dev-only-do-not-override-qgg3xn) .ant-divider .ant-divider-inner-text {
+  padding-inline: 0 !important; /* Using !important to ensure override */
+}
+
+.ant-divider-inner-text {
+  flex-shrink: 0; /* Prevent the text from shrinking */
+}
+
+.image-grid {
+  display: grid;
+  width: 95%;
+    margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 100px; /* top-bottom gap */
+  grid-column-gap: 70px; /* left-right gap */
+}
+
+@media (max-width: 1200px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid-item img {
+  width: 100%;
+  object-fit: cover;
+}
