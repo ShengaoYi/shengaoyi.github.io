@@ -12,32 +12,31 @@ import Wildfire from "./components/Projects/Wildfire";
 import Solar from "./components/Projects/Solar";
 import DRL from "./components/Projects/DRL";
 import MyFooter from "./components/Footer";
+import ScrollToTop from './components/ScrollToTop';
 const {Footer, Sider} = Layout;
-
 export default class App extends React.Component {
     state = {
         collapsed: false,
     };
-
     toggle = () => {
         this.setState({
             collapsed: !this.state.collapsed,
         });
     };
-
     render() {
         return (
             <div>
                 <BrowserRouter>
+                    <ScrollToTop />
                     <Layout className={"all-layout"}>
                         <Layout>
                             <Routes>
-                                <Route path="/home" element={<Home/>}/>
+                                <Route path="/" element={<Home/>}/>
                                 <Route path="/RATScreener" element={<RATScreener/>}/>
                                 <Route path="/Wildfire" element={<Wildfire/>}/>
                                 <Route path="/Solar" element={<Solar/>}/>
                                 <Route path="/DRL" element={<DRL/>}/>
-                                <Route path="/" element={<Navigate replace to="/home"/>}/>
+                                <Route path="/" element={<Navigate replace to="/"/>}/>
                             </Routes>
                             <Footer className="custom-footer" style={{textAlign: 'center', background: "black", color: "white"}}>Copyright © Shengao Yi, 2023</Footer>
                         </Layout>

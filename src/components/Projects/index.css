@@ -134,21 +134,21 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .content-width {
-        width: 75%; /* Adjust as necessary for your design */
+        width: 80%; /* Adjust as necessary for your design */
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .content-width {
-        width: 70%; /* Adjust as necessary for your design */
+        width: 80%; /* Adjust as necessary for your design */
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .content-width {
-        width: 60%; /* This might remain the same or change as per your design requirements */
+        width: 80%; /* This might remain the same or change as per your design requirements */
     }
 }
 .content-centered {

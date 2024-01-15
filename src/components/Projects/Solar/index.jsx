@@ -1,6 +1,6 @@
 import React from "react";
 import '../index.css';
-import wildfire from '../images/Wildfire.gif';
+import solar1 from '../Solar/imgs/Solar1.png';
 import {Breadcrumb, Layout, Row, Tooltip} from "antd";
 import {Link} from "react-router-dom";
 import {Image} from 'antd';
@@ -18,7 +18,7 @@ const Solar = () => (
                 <Breadcrumb className="custom-breadcrumb"
                     items={[
                         {
-                            title: <Link to="/home">Home</Link>,
+                            title: <Link to="/">Home</Link>,
                         },
                         {
                             title: <a href="">Data Analytics</a>,
@@ -31,7 +31,7 @@ const Solar = () => (
             </Row>
 
             <div className="project-image">
-                <Image width={650} src={wildfire} preview={false}/>
+                <Image width={650} src={solar1} preview={false}/>
             </div>
             <div className="title">
                 <h1>Wildfire Prediction in California</h1>

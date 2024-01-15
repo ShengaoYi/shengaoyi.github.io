@@ -1,6 +1,6 @@
 import React from "react";
 import '../index.css';
-import rats from '../images/Rats.png';
+import rats from '../images/Rats_logo.png';
 import ratsProcess from '../images/RatsProcess.png';
 import {Breadcrumb, Layout, Row, Tooltip} from "antd";
 import {Link} from "react-router-dom";
@@ -18,7 +18,7 @@ const RATScreener = () => (
                 <Breadcrumb className="custom-breadcrumb"
                     items={[
                         {
-                            title: <Link to="/home">Home</Link>,
+                            title: <Link to="/">Home</Link>,
                         },
                         {
                             title: <a href="">Data Analytics</a>,

@@ -18,7 +18,7 @@ const DRL = () => (
                 <Breadcrumb
                     items={[
                         {
-                            title: <Link to="/home">Home</Link>,
+                            title: <Link to="/">Home</Link>,
                         },
                         {
                             title: <a href="">Researches</a>,

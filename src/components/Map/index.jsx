@@ -1,23 +1,24 @@
 import React, {useRef, useEffect, useState} from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import './index.css';
+import {Link} from 'react-router-dom';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoieWVzZW5pYW8iLCJhIjoiY2xrMjhwOWczMDBpYzNlcXBsanZmaDhjdCJ9.9dLoG5t_-OMelTBRWdlKRw';
 
 export default function Map() {
     const mapContainer = useRef(null);
-    const [lng, setLng] = useState(-172.61250061282342);
-    const [lat, setLat] = useState(33.21354494699025);
-    const [zoom, setZoom] = useState(1.3);
+    const [lng, setLng] = useState(-80.5795);
+    const [lat, setLat] = useState(39.828);
+    const [zoom, setZoom] = useState(1.5);
     const [bounds] = useState([
-        [-120, -60], // Southwest coordinates
-        [180, 70] // Northeast coordinates
+        [-210, -30], // Southwest coordinates
+        [150, 70] // Northeast coordinates
     ]);
 
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainer.current,
-            style: "mapbox://styles/mapbox/dark-v9",
+            style: "mapbox://styles/mapbox/dark-v11",
             center: [lng, lat],
             zoom: zoom,
             maxBounds: bounds,
@@ -174,6 +175,32 @@ export default function Map() {
                                         'coordinates': [-71.09313647863642, 42.35924784630024]
                                     }
                                 },
+                                {
+                                    'type': 'Feature',
+                                    'properties': {
+                                        "title": "Wildfire",
+                                        'description':
+                                            '<div style="font-size: 18px;"><strong>California, CA</strong></div> <a href="/Wildfire"><p style="font-size: 15px; font-family: sans-serif">California wildfire prediction project.</a> </p>',
+                                    },
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [-119.93306839942996, 36.39483668611825]
+                                    }
+                                },
+                                {
+                                    'type': 'Feature',
+                                    'properties': {
+                                        "title": "RATScreener",
+                                        'description':
+                                            '<div style="font-size: 18px;"><strong>Washington, DC</strong></div> <a href="/RATScreener"><p style="font-size: 15px; font-family: sans-serif">A Vermin Inspection Optimization Tool.</a> </p>',
+                                    },
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [-77.01940102249893, 38.91288757461202]
+                                    }
+                                },
+
+
                             ]
                         },
                     });
@@ -221,7 +248,6 @@ export default function Map() {
             }
 
             console.log(coordinates)
-
 
             new mapboxgl.Popup()
                 .setLngLat(coordinates)

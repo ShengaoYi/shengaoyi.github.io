@@ -18,7 +18,7 @@ const Wildfire = () => (
                 <Breadcrumb className="custom-breadcrumb"
                     items={[
                     {
-                      title: <Link to="/home">Home</Link>,
+                      title: <Link to="/">Home</Link>,
                     },
                     {
                       title: <a href="">Data Analytics</a>,
