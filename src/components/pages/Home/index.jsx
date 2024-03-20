@@ -2,7 +2,6 @@ import Map from "../../Map";
 import {Layout} from "antd";
 import Projects from "../../Projects";
 import React from "react";
-import {Route} from "react-router-dom";
 import CustomHeader from "../../Header";
 import './index.css';
 import About from "../../About";

@@ -1,5 +1,5 @@
 import MyCard from "../Card";
-import {Col, Divider, Layout, Row, Carousel } from 'antd';
+import {Divider, Layout} from 'antd';
 import React from "react";
 import {Link} from 'react-router-dom';
 import rats from './images/Rats.png';
@@ -44,8 +44,8 @@ const Projects = () => (
                     <MyCard
                         hoverable
                         imageUrl={solar}
-                        title="Solar Operation"
-                        description="">
+                        title="Solar Roof Operations in Philadelphia"
+                        description="Front-end, Web design, Visualization">
                     </MyCard>
                 </Link>
                 <Link to="/Wildfire">
@@ -96,12 +96,20 @@ const Projects = () => (
                         description="Google Street View images, Road Network">
                     </MyCard>
                 </a>
-                    <a href="https://github.com/ShengaoYi/pgRouting_tutorial" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/ShengaoYi/pgRouting_tutorial" target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
                         imageUrl={pgRouting}
                         title="pgRouting Tutorial"
                         description="Network Analysis, PostGIS, PostgreSQL">
+                    </MyCard>
+                </a>
+                <a href="https://github.com/ShengaoYi/NX-ServiceArea" target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={pgRouting}
+                        title="Service Area"
+                        description="ArcPy, NetworkX, PostgreSQL">
                     </MyCard>
                 </a>
             </div>

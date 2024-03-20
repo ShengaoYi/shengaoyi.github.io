@@ -192,7 +192,7 @@ export default function Map() {
                                     'properties': {
                                         "title": "RATScreener",
                                         'description':
-                                            '<div style="font-size: 18px;"><strong>Washington, DC</strong></div> <a href="/RATScreener"><p style="font-size: 15px; font-family: sans-serif">A Vermin Inspection Optimization Tool.</a> </p>',
+                                            '<div style="font-size: 18px;"><strong>Washington, DC</strong></div> <a href="/RATScreener"><p style="font-size: 15px; font-family: sans-serif">A vermin inspection optimization tool.</a> </p>',
                                     },
                                     'geometry': {
                                         'type': 'Point',

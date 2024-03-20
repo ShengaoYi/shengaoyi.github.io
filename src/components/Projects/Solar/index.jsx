@@ -1,15 +1,14 @@
 import React from "react";
 import '../index.css';
 import solar1 from '../Solar/imgs/Solar1.png';
+import solar2 from '../Solar/imgs/Solar2.png';
+import solar3 from '../Solar/imgs/Solar3.png';
 import {Breadcrumb, Layout, Row, Tooltip} from "antd";
 import {Link} from "react-router-dom";
 import {Image} from 'antd';
-import fire1 from "../images/Fire1.png";
-import fire2 from "../images/Fire2.png";
-import markdown from "../../../img/markdown.png";
+import github from "../../../img/github.png";
 
 const {Content} = Layout;
-
 const Solar = () => (
     <div className="container-centered">
         <Content className="site-layout-background content-width">
@@ -34,32 +33,38 @@ const Solar = () => (
                 <Image width={650} src={solar1} preview={false}/>
             </div>
             <div className="title">
-                <h1>Wildfire Prediction in California</h1>
+                <h1>Solar Roof Operations in Philadelphia</h1>
                 <p className="basic-info">December 2023</p>
-                <p className="basic-info">By Minwook Kang, and Shengao Yi</p>
-                <p className="basic-info">Role: Model Building, R Markdown</p>
+                <p className="basic-info">By Shengao Yi, and Minwook Kang</p>
+                <p className="basic-info">Role: Front-end, Web design, Visualization</p>
                 <p className="basic-info">University of Pennsylvania</p>
                 <div style={{display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px'}}>
-                    <Tooltip title="Markdown" placement="bottom">
-                        <a href="https://shengaoyi.github.io/UPenn/MUSA508/Forecasting%20wildfire%20risk%20for%20a%20region%20in%20California.html" target="_blank">
-                            <Image width={50} src={markdown} preview={false}/>
+                    <Tooltip title="GitHub" placement="bottom">
+                        <a href="https://github.com/ShengaoYi/Solar-Operations" target="_blank">
+                            <Image width={30} src={github} preview={false}/>
                         </a>
                     </Tooltip>
                 </div>
             </div>
             <div className="content">
                 <h2>What is our motivation?</h2>
-                <p>Since the 1980s, the size and intensity of wildfires in California have notably increased. The amount of land burned by wildfires in the state has risen steeply in the past five years. In 2021, 8,619 wildfires burned almost 2.6 million acres. There were three fatalities and 3,629 structures were damaged or destroyed. Although the government has paid much attention to this problem and made effort to reduce these kind of things, the situation has not changed.</p>
+                <p>Our mission is to illuminate the financial and environmental benefits of Solar Roofs to building owners and communities. With the growing urgency for sustainable energy solutions, our website serves as a beacon, showcasing the untapped potential
+                    of solar power across urban landscapes. We aim to not only inform but also inspire action towards adopting solar energy, highlighting its significant role in fostering a more sustainable and cost-effective future.</p>
+                <h2>Exploring City-Wide Solar Capabilities</h2>
+                <p>Our 'My City Potential' page broadens the scope, offering a macro perspective on the solar capabilities of entire cities. Through a dynamic dashboard,
+                    stakeholders can explore data such as the total number of roofs suitable for solar panels, aggregate roof area, estimated annual energy generation in MWh,
+                    and the overall environmental benefits. This city-level analysis empowers policymakers, environmentalists, and community leaders to champion solar
+                    initiatives with tangible data and potential economic gains.</p>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Image width={700} src={fire1} preview={false}/>
+                    <Image width={700} src={solar2} preview={false}/>
                 </div>
-                <h2>What we did?</h2>
-                <p>As the changes of climate, the wildfires becomes more and more frequent. So it’s essential for us to predict wildfires more accurately. Our solution is using Logistic Regression to predict probability occurrence rate of wildfires in California by merging various data like elevation, land cover, precipitation and so on. Then we run a 100-folds cross validation to test the model’s generalizability. At last, we conduct weight scenario analysis to find the optimal threshold. For more accurate results, we also create 12 models for each month. That would provide more granular guidance to government departments.</p>
+                <h2>Discover Your Roof's Potential</h2>
+                <p>At the heart of our platform is the 'My Roof Potential' page, a user-friendly interface designed to demystify solar installations for individual building owners. By simply entering an address or selecting a building on our interactive map, users receive a comprehensive analysis of their roof's solar potential. This includes annual sunlight hours, available area for solar panels, estimated net profits over 20 years, and the environmental impact of making the switch to solar.</p>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Image width={700} src={fire2} preview={false}/>
+                    <Image width={700} src={solar3} preview={false}/>
                 </div>
-                <h2>Our App</h2>
-                <p>We have designed a web application named Favigator for patrols. It contains the basic function like when you click a month, it will show the wildfire risk prediction map accordingly, and you can also zoom to fire unit which you are interested in. The second and also main usage is to suggest an optimal patrol route of risky area based on user location. <a href="https://www.youtube.com/watch?v=VgH8ib5mufw" target="_blank">Click here</a> to access the Favigator introduction video.</p>
+                <h2>Supported by Google Project Sunroof</h2>
+                <p>This initiative is proudly supported by <a href="https://sunroof.withgoogle.com/" target="_blank">Google Project Sunroof</a>, a testament to our commitment to providing accurate, data-driven insights into solar potential. Leveraging the comprehensive data and analytical prowess of Google Project Sunroof, we enhance our platform's capability to predict solar energy benefits with greater precision. This collaboration underscores our dedication to advancing solar energy adoption through innovative technologies and partnerships.</p>
             </div>
         </Content>
     </div>
