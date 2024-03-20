@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.5bba93a5.css",
-    "main.js": "/static/js/main.075a28c2.js",
+    "main.js": "/static/js/main.22fe59fb.js",
     "static/js/787.460c28a1.chunk.js": "/static/js/787.460c28a1.chunk.js",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
-    "static/media/Solar.png": "/static/media/Solar.af3b3498df2a59e80c5c.png",
+    "static/media/Solar3.png": "/static/media/Solar3.30f1b27d16f97626b740.png",
+    "static/media/Solar2.png": "/static/media/Solar2.411d13748c435fec9fd5.png",
     "static/media/Wildfire.gif": "/static/media/Wildfire.007fdc9dbd2906c58032.gif",
     "static/media/DRL.pdf": "/static/media/DRL.923750b997e7cb876570.pdf",
     "static/media/pgRouting.png": "/static/media/pgRouting.637e90378f3797dc6d17.png",
+    "static/media/Solar.png": "/static/media/Solar.5c6cc628a81d5ff821a5.png",
     "static/media/DRL_framework.png": "/static/media/DRL_framework.3c377f3f7c4effcb06b9.png",
     "static/media/StreetView.jpg": "/static/media/StreetView.33d5b553ff1d76deaaee.jpg",
     "static/media/Fire1.png": "/static/media/Fire1.84a56e61f159c5626e92.png",
@@ -28,11 +30,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.5bba93a5.css.map": "/static/css/main.5bba93a5.css.map",
-    "main.075a28c2.js.map": "/static/js/main.075a28c2.js.map",
+    "main.22fe59fb.js.map": "/static/js/main.22fe59fb.js.map",
     "787.460c28a1.chunk.js.map": "/static/js/787.460c28a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5bba93a5.css",
-    "static/js/main.075a28c2.js"
+    "static/js/main.22fe59fb.js"
   ]
 }
