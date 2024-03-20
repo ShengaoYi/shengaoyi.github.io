@@ -30,7 +30,7 @@ const About = () => (
               <div className="resume-item-time">2023/09–</div>
           </div>
           <ul>
-             <li>GeoAI, Urban analytics</li>
+             <li>GeoAI, Urban analytics, Urban heat exposure</li>
           </ul>
           <div className="resume-item">
               <div className="resume-item-title">Master of Urban Spatial Analytics, University of Pennsylvania</div>
