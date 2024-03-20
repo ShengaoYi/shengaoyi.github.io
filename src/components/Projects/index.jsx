@@ -7,6 +7,8 @@ import wildfire from './images/Wildfire.gif';
 import solar from './images/Solar.png';
 import svi from './images/StreetView.jpg';
 import pgRouting from './images/pgRouting.png';
+import servicearea from './images/ServiceArea.png'
+import homelessness from './images/Homeless.png';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -56,18 +58,18 @@ const Projects = () => (
                         description="Forecasting Wildfire Risk in California">
                     </MyCard>
                 </Link>
-                <Link to="/Wildfire">
-                    <MyCard
-                        hoverable
-                        imageUrl={wildfire}
-                        title="Wildfire Risk Prediction"
-                        description="Forecasting Wildfire Risk in California">
-                    </MyCard>
-                </Link>
             </div>
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
             <div className="image-grid">
+                <Link to="/Homelessness">
+                    <MyCard
+                        hoverable
+                        imageUrl={homelessness}
+                        title="Exploring urban homelessness using multi-source urban big data and interpretable machine learning: A case study in New York City"
+                        description="Homelessness, street view imagery, IML, SHAP">
+                    </MyCard>
+                </Link>
                 <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
@@ -107,7 +109,7 @@ const Projects = () => (
                 <a href="https://github.com/ShengaoYi/NX-ServiceArea" target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
-                        imageUrl={pgRouting}
+                        imageUrl={servicearea}
                         title="Service Area"
                         description="ArcPy, NetworkX, PostgreSQL">
                     </MyCard>
