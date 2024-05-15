@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bba93a5.css",
-    "main.js": "/static/js/main.f16eead2.js",
+    "main.css": "/static/css/main.c40d945c.css",
+    "main.js": "/static/js/main.00760ae9.js",
     "static/js/787.460c28a1.chunk.js": "/static/js/787.460c28a1.chunk.js",
+    "static/media/Surface_Albedo.jpg": "/static/media/Surface_Albedo.50bca13445f0c99565cb.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/Solar3.png": "/static/media/Solar3.30f1b27d16f97626b740.png",
     "static/media/Solar2.png": "/static/media/Solar2.411d13748c435fec9fd5.png",
@@ -36,12 +37,12 @@
     "static/media/LI.png": "/static/media/LI.a95afc06831647f5fca2.png",
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
-    "main.5bba93a5.css.map": "/static/css/main.5bba93a5.css.map",
-    "main.f16eead2.js.map": "/static/js/main.f16eead2.js.map",
+    "main.c40d945c.css.map": "/static/css/main.c40d945c.css.map",
+    "main.00760ae9.js.map": "/static/js/main.00760ae9.js.map",
     "787.460c28a1.chunk.js.map": "/static/js/787.460c28a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bba93a5.css",
-    "static/js/main.f16eead2.js"
+    "static/css/main.c40d945c.css",
+    "static/js/main.00760ae9.js"
   ]
 }
