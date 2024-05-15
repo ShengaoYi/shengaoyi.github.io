@@ -9,6 +9,7 @@ import svi from './images/StreetView.jpg';
 import pgRouting from './images/pgRouting.png';
 import servicearea from './images/ServiceArea.png'
 import homelessness from './images/Homeless.png';
+import surface_albedo from './images/Surface_Albedo.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -62,6 +63,14 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
             <div className="image-grid">
+                <Link to="/Albedopedia">
+                    <MyCard
+                        hoverable
+                        imageUrl={surface_albedo}
+                        title="A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning"
+                        description="Surface albedo, deep learning, high-resolution, dataset">
+                    </MyCard>
+                </Link>
                 <Link to="/Homelessness">
                     <MyCard
                         hoverable

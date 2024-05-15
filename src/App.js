@@ -11,6 +11,7 @@ import RATScreener from "./components/Projects/Rats";
 import Wildfire from "./components/Projects/Wildfire";
 import Solar from "./components/Projects/Solar";
 import DRL from "./components/Projects/DRL";
+import Albedopedia from "./components/Projects/Albedopedia";
 import Homelessness from "./components/Projects/Homelessness";
 import MyFooter from "./components/Footer";
 import ScrollToTop from './components/ScrollToTop';
@@ -36,6 +37,7 @@ export default class App extends React.Component {
                                 <Route path="/RATScreener" element={<RATScreener/>}/>
                                 <Route path="/Wildfire" element={<Wildfire/>}/>
                                 <Route path="/Solar" element={<Solar/>}/>
+                                <Route path="/Albedopedia" element={<Albedopedia/>}/>
                                 <Route path="/Homelessness" element={<Homelessness/>}/>
                                 <Route path="/DRL" element={<DRL/>}/>
                                 <Route path="/" element={<Navigate replace to="/"/>}/>
