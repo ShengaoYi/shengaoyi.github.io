@@ -26,13 +26,13 @@
 
 /* You can add more breakpoints for larger devices if necessary */
 
-
 .title {
     margin-top: 30px;
     height: auto;
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 .title h1 {
@@ -40,12 +40,14 @@
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 1rem;
+    /*display: block;*/
 }
 
 .basic-info {
     font-size: 15px;
     margin: 0;
     color: white;
+    /*display: block;*/
 }
 
 /* Custom breadcrumb style */

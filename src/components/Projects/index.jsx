@@ -9,6 +9,7 @@ import svi from './images/StreetView.jpg';
 import pgRouting from './images/pgRouting.png';
 import servicearea from './images/ServiceArea.png'
 import homelessness from './images/Homeless.png';
+import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
@@ -51,14 +52,6 @@ const Projects = () => (
                         description="Front-end, Web design, Visualization">
                     </MyCard>
                 </Link>
-                <Link to="/Wildfire">
-                    <MyCard
-                        hoverable
-                        imageUrl={wildfire}
-                        title="Wildfire Risk Prediction"
-                        description="Forecasting Wildfire Risk in California">
-                    </MyCard>
-                </Link>
             </div>
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
@@ -69,6 +62,14 @@ const Projects = () => (
                         imageUrl={surface_albedo}
                         title="A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning"
                         description="Surface albedo, deep learning, high-resolution, dataset">
+                    </MyCard>
+                </Link>
+                <Link to="/OpenDefecation">
+                    <MyCard
+                        hoverable
+                        imageUrl={opendefecation}
+                        title="Interpretable spatial machine learning insights into urban sanitation challenges: A case study of human feces distribution in San Francisco"
+                        description="Urban sanitation, open defecation, Spatial IML, SHAP">
                     </MyCard>
                 </Link>
                 <Link to="/Homelessness">
