@@ -11,6 +11,7 @@ import servicearea from './images/ServiceArea.png'
 import homelessness from './images/Homeless.png';
 import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
+import parkentrance from './images/ParkEntrance.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -64,6 +65,14 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.jclepro.2024.142951'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={parkentrance}
+                        title="Effective or useless? Assessing the impact of park entrance addition policy on green space services from the 15-minute city perspective"
+                        description="Urban parks, Park entrance, Accessibility, 15-minute city">
+                    </MyCard>
+                </a>
                 <Link to="/OpenDefecation">
                     <MyCard
                         hoverable

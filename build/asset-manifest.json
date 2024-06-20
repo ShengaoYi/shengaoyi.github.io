@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8cc60ea4.css",
-    "main.js": "/static/js/main.f4ebad7a.js",
+    "main.js": "/static/js/main.832a84c5.js",
     "static/js/787.460c28a1.chunk.js": "/static/js/787.460c28a1.chunk.js",
-    "static/media/Surface_Albedo.jpg": "/static/media/Surface_Albedo.50bca13445f0c99565cb.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/Solar3.png": "/static/media/Solar3.30f1b27d16f97626b740.png",
     "static/media/Solar2.png": "/static/media/Solar2.411d13748c435fec9fd5.png",
@@ -17,6 +16,7 @@
     "static/media/Homeless.png": "/static/media/Homeless.de7893ea5f1a6ff911b2.png",
     "static/media/Table.png": "/static/media/Table.2e48e6ff1df0b42a7da9.png",
     "static/media/OpenDefecation.jpeg": "/static/media/OpenDefecation.403b8c39f53743595e68.jpeg",
+    "static/media/Surface_Albedo.jpg": "/static/media/Surface_Albedo.1afb7153c9e52e8b9a34.jpg",
     "static/media/DRL_framework.png": "/static/media/DRL_framework.3c377f3f7c4effcb06b9.png",
     "static/media/StreetView.jpg": "/static/media/StreetView.33d5b553ff1d76deaaee.jpg",
     "static/media/Built_environment_Interaction.jpg": "/static/media/Built_environment_Interaction.de0c04c5f9062cb01d83.jpg",
@@ -40,11 +40,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.8cc60ea4.css.map": "/static/css/main.8cc60ea4.css.map",
-    "main.f4ebad7a.js.map": "/static/js/main.f4ebad7a.js.map",
+    "main.832a84c5.js.map": "/static/js/main.832a84c5.js.map",
     "787.460c28a1.chunk.js.map": "/static/js/787.460c28a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8cc60ea4.css",
-    "static/js/main.f4ebad7a.js"
+    "static/js/main.832a84c5.js"
   ]
 }

@@ -12,7 +12,6 @@ const MyCard = (props) => (
           <div className="image-title">{props.title}</div>
           <div className="image-subject">{props.description}</div>
       </div>
-
   </>
 );
 
