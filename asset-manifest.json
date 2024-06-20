@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8cc60ea4.css",
-    "main.js": "/static/js/main.832a84c5.js",
-    "static/js/787.460c28a1.chunk.js": "/static/js/787.460c28a1.chunk.js",
+    "main.css": "/static/css/main.802d73c3.css",
+    "main.js": "/static/js/main.9534f67d.js",
+    "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/Solar3.png": "/static/media/Solar3.30f1b27d16f97626b740.png",
     "static/media/Solar2.png": "/static/media/Solar2.411d13748c435fec9fd5.png",
@@ -24,6 +24,7 @@
     "static/media/Fire1.png": "/static/media/Fire1.84a56e61f159c5626e92.png",
     "static/media/Rats.png": "/static/media/Rats.0bbceb7f27154afdf6a7.png",
     "static/media/Farms.png": "/static/media/Farms.1fd3d7f1a0498154011e.png",
+    "static/media/ParkEntrance.jpg": "/static/media/ParkEntrance.d7c544a12ec608520418.jpg",
     "static/media/RatsProcess.png": "/static/media/RatsProcess.d9b6a12f4aa82d7aee8c.png",
     "static/media/Avatar.jpg": "/static/media/Avatar.680f0f92e3f2e982f03d.jpg",
     "static/media/Frequent_street.png": "/static/media/Frequent_street.4a93f05b12a2527b97c5.png",
@@ -39,12 +40,12 @@
     "static/media/LI.png": "/static/media/LI.a95afc06831647f5fca2.png",
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
-    "main.8cc60ea4.css.map": "/static/css/main.8cc60ea4.css.map",
-    "main.832a84c5.js.map": "/static/js/main.832a84c5.js.map",
-    "787.460c28a1.chunk.js.map": "/static/js/787.460c28a1.chunk.js.map"
+    "main.802d73c3.css.map": "/static/css/main.802d73c3.css.map",
+    "main.9534f67d.js.map": "/static/js/main.9534f67d.js.map",
+    "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cc60ea4.css",
-    "static/js/main.832a84c5.js"
+    "static/css/main.802d73c3.css",
+    "static/js/main.9534f67d.js"
   ]
 }
