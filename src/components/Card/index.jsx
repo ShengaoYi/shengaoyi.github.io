@@ -9,7 +9,9 @@ const MyCard = (props) => (
             <img src={props.imageUrl} alt="Project" className="card-img" />
       </div>
       <div style={{ paddingLeft: '5px', paddingRight: '5px', flex: 1 }}>
-          <div className="image-title">{props.title}</div>
+          <div className="image-title">{props.title}
+              {props.journal && <div className="journal">{props.journal}</div>}
+          </div>
           <div className="image-subject">{props.description}</div>
       </div>
   </>

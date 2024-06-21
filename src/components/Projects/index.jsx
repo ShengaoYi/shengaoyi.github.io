@@ -70,6 +70,7 @@ const Projects = () => (
                         hoverable
                         imageUrl={parkentrance}
                         title="Effective or useless? Assessing the impact of park entrance addition policy on green space services from the 15-minute city perspective"
+                        journal="Accepted by Journal of Cleaner Production"
                         description="Urban parks, Park entrance, Accessibility, 15-minute city">
                     </MyCard>
                 </a>
@@ -78,6 +79,7 @@ const Projects = () => (
                         hoverable
                         imageUrl={opendefecation}
                         title="Interpretable spatial machine learning insights into urban sanitation challenges: A case study of human feces distribution in San Francisco"
+                        journal="Under reviewed by Sustainable Cities and Society"
                         description="Urban sanitation, open defecation, Spatial IML, SHAP">
                     </MyCard>
                 </Link>
@@ -86,6 +88,7 @@ const Projects = () => (
                         hoverable
                         imageUrl={homelessness}
                         title="Exploring urban homelessness using multi-source urban big data and interpretable machine learning: A case study in New York City"
+                        journal="Under reviewed by Journal of Environmental Management"
                         description="Homelessness, street view imagery, IML, SHAP">
                     </MyCard>
                 </Link>
@@ -93,7 +96,8 @@ const Projects = () => (
                     <MyCard
                         hoverable
                         imageUrl={DRL}
-                        title="Deep online recommendations system for connected E-taxis"
+                        title="Deep online recommendations for connected E-taxis by coupling trajectory mining and reinforcement learning"
+                        journal="Accepted by IJGIS"
                         description="Deep reinforcement learning">
                     </MyCard>
                 </a>
@@ -102,6 +106,7 @@ const Projects = () => (
                         hoverable
                         imageUrl={Frequent_street}
                         title="High Frequency Street"
+                        journal="Accepted by South Architecture"
                         description="">
                     </MyCard>
                 </a>

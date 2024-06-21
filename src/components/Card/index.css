@@ -62,7 +62,6 @@
   }
 }
 
-
 .image-title {
   font-family: "Post Grotesk",Helvetica,Arial,sans-serif;
   line-height: 1.3em;
@@ -74,6 +73,12 @@
   right: 0;
   color: #fff;
   padding: 5px;
+  text-align: center;
+}
+.journal {
+  font-size: 0.9em;
+  color: rgb(241, 138, 35);
+  font-weight: 600;
   text-align: center;
 }
 
