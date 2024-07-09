@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { Button } from 'antd';
 import { GithubOutlined, LinkedinOutlined, MailOutlined, FileTextOutlined } from '@ant-design/icons';
-
+import CV from './Shengao_Yi_CV.pdf'
 
 const About = () => (
   <div id="about">
@@ -19,7 +19,7 @@ const About = () => (
               <MailOutlined />
               yishengao@alumni.upenn.edu
           </a>
-          <Button type="primary" icon={<FileTextOutlined />} href="/path-to-cv.pdf" target="_blank">
+          <Button type="primary" icon={<FileTextOutlined />} href={CV} target="_blank">
               CV
           </Button>
       </div>
@@ -30,7 +30,7 @@ const About = () => (
               <div className="resume-item-time">2023/09–</div>
           </div>
           <ul>
-             <li>GeoAI, Urban analytics, Urban heat exposure</li>
+             <li>AI for Landscape Planning and Design, Micro-scale Urban analytics, GeoAI</li>
           </ul>
           <div className="resume-item">
               <div className="resume-item-title">Master of Urban Spatial Analytics, University of Pennsylvania</div>
