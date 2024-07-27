@@ -65,6 +65,15 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <Link to="/OpenDefecation">
+                    <MyCard
+                        hoverable
+                        imageUrl={opendefecation}
+                        title="Interpretable spatial machine learning insights into urban sanitation challenges: A case study of human feces distribution in San Francisco"
+                        journal="Accepted by Sustainable Cities and Society"
+                        description="Urban sanitation, open defecation, Spatial IML, SHAP">
+                    </MyCard>
+                </Link>
                 <a href={'https://doi.org/10.1016/j.jclepro.2024.142951'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
@@ -74,15 +83,6 @@ const Projects = () => (
                         description="Urban parks, Park entrance, Accessibility, 15-minute city">
                     </MyCard>
                 </a>
-                <Link to="/OpenDefecation">
-                    <MyCard
-                        hoverable
-                        imageUrl={opendefecation}
-                        title="Interpretable spatial machine learning insights into urban sanitation challenges: A case study of human feces distribution in San Francisco"
-                        journal="Under reviewed by Sustainable Cities and Society"
-                        description="Urban sanitation, open defecation, Spatial IML, SHAP">
-                    </MyCard>
-                </Link>
                 <Link to="/Homelessness">
                     <MyCard
                         hoverable
