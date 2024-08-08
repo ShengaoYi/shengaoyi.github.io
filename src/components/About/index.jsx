@@ -26,11 +26,11 @@ const About = () => (
       <section>
           <h2>Education</h2>
           <div className="resume-item">
-              <div className="resume-item-title">Doctor of Philosophy in Geography and Urban Studies, Temple University</div>
-              <div className="resume-item-time">2023/09–</div>
+              <div className="resume-item-title">Doctor of Philosophy in City and Regional Planning, University of Pennsylvania</div>
+              <div className="resume-item-time">2024/08–</div>
           </div>
           <ul>
-             <li>AI for Landscape Planning and Design, Micro-scale Urban analytics, GeoAI</li>
+             <li>AI for Landscape Planning, Optimization and Design, Micro-scale Urban analytics, GeoAI</li>
           </ul>
           <div className="resume-item">
               <div className="resume-item-title">Master of Urban Spatial Analytics, University of Pennsylvania</div>
