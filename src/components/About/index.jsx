@@ -25,6 +25,8 @@ const About = () => (
           </Button>
       </div>
       <section>
+          <p style={{fontSize: 17}}>Shengao Yi (he/his) is a Ph.D. student in City & Regional Planning at the University of Pennsylvania Weitzman School of Design, concentrating on landscape planning and urban analytics. He is also a graduate researcher at the Urban Spatial Informatics Lab led by Professor Xiaojiang Li, aiming to combine Science, Data, and Design together to tackle the pressing urban challenges through the collaboration with communities.</p>
+          <p style={{fontSize: 17}}>His research focuses on the AI for landscape planning, optimization and design, urban microclimate modeling, micro-scale urban analytics, and GeoAI. Aspiring to an academic career, he is dedicated to addressing socio-environmental challenges by developing innovative AI-driven approaches to mitigate urban heat effects, optimize green infrastructure, and enhance urban resilience.</p>
           <h2>Education</h2>
           <div className="resume-item">
               <div className="resume-item-title">Doctor of Philosophy in City and Regional Planning, University of Pennsylvania</div>
