@@ -12,6 +12,7 @@ import homelessness from './images/Homeless.png';
 import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
 import parkentrance from './images/ParkEntrance.jpg';
+import solar_LCZ from './images/Solar_LCZ.jpg'
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -65,13 +66,22 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.compenvurbsys.2024.102176'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={solar_LCZ}
+                        title="LCZ-based city-wide solar radiation potential analysis by coupling physical modeling, machine learning, and 3D buildings"
+                        journal="Accepted by Computers, Environment and Urban Systems"
+                        description="Solar radiation potential, Machine learning, Local climate zone, 3D buildings">
+                    </MyCard>
+                </a>
                 <Link to="/OpenDefecation">
                     <MyCard
                         hoverable
                         imageUrl={opendefecation}
                         title="Interpretable spatial machine learning insights into urban sanitation challenges: A case study of human feces distribution in San Francisco"
                         journal="Accepted by Sustainable Cities and Society"
-                        description="Urban sanitation, open defecation, Spatial IML, SHAP">
+                        description="Urban sanitation, Open defecation, Spatial IML, SHAP">
                     </MyCard>
                 </Link>
                 <a href={'https://doi.org/10.1016/j.jclepro.2024.142951'} target="_blank" rel="noopener noreferrer">
