@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a02ffd03.css",
-    "main.js": "/static/js/main.c62e5632.js",
+    "main.js": "/static/js/main.53638082.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/Solar3.png": "/static/media/Solar3.30f1b27d16f97626b740.png",
@@ -14,6 +14,7 @@
     "static/media/Framework.jpg": "/static/media/Framework.ad97c2a88fd45d3f5305.jpg",
     "static/media/ServiceArea.png": "/static/media/ServiceArea.5829795b5456acf06683.png",
     "static/media/Homeless.png": "/static/media/Homeless.de7893ea5f1a6ff911b2.png",
+    "static/media/Solar_LCZ.jpg": "/static/media/Solar_LCZ.57384d087591bf7a5900.jpg",
     "static/media/Table.png": "/static/media/Table.2e48e6ff1df0b42a7da9.png",
     "static/media/OpenDefecation.jpeg": "/static/media/OpenDefecation.403b8c39f53743595e68.jpeg",
     "static/media/Surface_Albedo.jpg": "/static/media/Surface_Albedo.1afb7153c9e52e8b9a34.jpg",
@@ -42,11 +43,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.a02ffd03.css.map": "/static/css/main.a02ffd03.css.map",
-    "main.c62e5632.js.map": "/static/js/main.c62e5632.js.map",
+    "main.53638082.js.map": "/static/js/main.53638082.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a02ffd03.css",
-    "static/js/main.c62e5632.js"
+    "static/js/main.53638082.js"
   ]
 }
