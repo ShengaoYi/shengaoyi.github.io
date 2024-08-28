@@ -143,23 +143,11 @@ export default function Map() {
                                     'properties': {
                                         "title": "UPenn",
                                         'description':
-                                            '<div style="font-size: 18px;"><strong>Philadelphia, PA</strong></div><p style="font-size: 15px; font-family: sans-serif">I graduated from the <a href="https://www.design.upenn.edu/urban-spatial-analytics" target="_blank">Master of Urban Spatial Analytics</a> at University of Pennsylvania (2022-2023).</p>',
+                                            '<div style="font-size: 18px;"><strong>Philadelphia, PA</strong></div><p style="font-size: 15px; font-family: sans-serif">I graduated from the <a href="https://www.design.upenn.edu/urban-spatial-analytics" target="_blank">Master of Urban Spatial Analytics</a> at UPenn (2022-2023). Current a PhD student in <a href="https://www.design.upenn.edu/city-regional-planning/phd/about" target="_blank">City and Regional Planning </a> at UPenn, supervised by <a href="https://www.urbanspatial.info" target="_blank"> Prof. Xiaojiang Li</p>',
                                     },
                                     'geometry': {
                                         'type': 'Point',
                                         'coordinates': [-75.1938017118167, 39.95188277334713]
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'properties': {
-                                        "title": "Temple",
-                                        'description':
-                                            '<div style="font-size: 18px;"><strong>Philadelphia, PA</strong></div><p style="font-size: 15px; font-family: sans-serif">I am an Geography Ph.D. student at Temple University (09.2023-), supervised by <a href="https://www.urbanspatial.info" target="_blank"> Prof. Xiaojiang Li</a>.</p>',
-                                    },
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [-75.152322252671, 39.981458836421396]
                                     }
                                 },
                                 {
