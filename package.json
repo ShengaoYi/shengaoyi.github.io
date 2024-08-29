@@ -8,7 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.4.7",
-    "mapbox-gl": "^3.4.0",
+    "mapbox-gl": "^2.5.0",
     "mapbox-gl-controls": "^2.3.5",
     "mapbox-gl-geocoder": "^2.0.1",
     "react": "^18.2.0",

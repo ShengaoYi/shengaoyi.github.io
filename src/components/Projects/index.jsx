@@ -12,16 +12,17 @@ import homelessness from './images/Homeless.png';
 import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
 import parkentrance from './images/ParkEntrance.jpg';
-import solar_LCZ from './images/Solar_LCZ.jpg'
+import solar_LCZ from './images/Solar_LCZ.jpg';
+import GI from './images/GI_Planning.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
 import bike from './images/Bike.png';
 import risk from './images/Risk.png';
 import subsidy from './images/Subsidy.png';
-import DRL from './images/DRL_framework.png'
-import DRL_paper from './publications/DRL.pdf'
-import Frequent_street from './images/Frequent_street.png'
+import DRL from './images/DRL_framework.png';
+import DRL_paper from './publications/DRL.pdf';
+import Frequent_street from './images/Frequent_street.png';
 
 const {Content} = Layout;
 
@@ -66,6 +67,15 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.scs.2024.105767'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={GI}
+                        title="Planning for green infrastructure by integrating multi-driver: Ranking priority based on accessibility-equity"
+                        journal="Accepted by Sustainable Cities and Society"
+                        description="Green infrastructure planning, Urban ecosystem, Multifunctionality, Sponge city, Nature-based solution">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.compenvurbsys.2024.102176'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
