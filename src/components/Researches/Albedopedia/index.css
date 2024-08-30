@@ -44,3 +44,62 @@
   max-height: 200px; /* 限制下拉菜单的最大高度 */
   overflow-y: auto; /* 添加垂直滚动条 */
 }
+
+.menu {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /*background: #efefef;*/
+  /*fontFamily: 'Open Sans, sans-serif';*/
+  zIndex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Arial, sans-serif';
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.legend {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Arial, sans-serif';
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.legend h4 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #000;
+}
+
+.legend-scale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column; /* 使色块和标签垂直排列 */
+  align-items: center;   /* 居中对齐 */
+  margin-right: 10px;
+}
+
+.legend-color {
+  width: 55px;          /* 调整色块宽度 */
+  height: 20px;         /* 调整色块高度 */
+  margin-bottom: 5px;   /* 色块与标签之间的距离 */
+  border: 1px solid #ccc;
+}
+
+.legend-label {
+  font-size: 16px;      /* 调整标签字体大小 */
+  text-align: center;
+}

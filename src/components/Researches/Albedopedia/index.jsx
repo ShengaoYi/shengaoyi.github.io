@@ -12,40 +12,278 @@ import {Image} from 'antd';
 const {Content} = Layout;
 
 const cities = [
-  { key: '1', label: 'Atlanta', coordinates: [-84.3880, 33.7490] },
-  { key: '2', label: 'Austin', coordinates: [-97.7431, 30.2672] },
-  { key: '3', label: 'Baltimore', coordinates: [-76.6122, 39.2904] },
-  { key: '4', label: 'Boston', coordinates: [-71.0589, 42.3601] },
-  { key: '5', label: 'Charlotte', coordinates: [-80.8431, 35.2271] },
-  { key: '6', label: 'Chicago', coordinates: [-87.6298, 41.8781] },
-  { key: '7', label: 'Cleveland', coordinates: [-81.6944, 41.4993] },
-  { key: '8', label: 'Dallas', coordinates: [-96.7970, 32.7767] },
-  { key: '9', label: 'Denver', coordinates: [-104.9903, 39.7392] },
-  { key: '10', label: 'Detroit', coordinates: [-83.0458, 42.3314] },
-  { key: '11', label: 'Houston', coordinates: [-95.3698, 29.7604] },
-  { key: '12', label: 'Indianapolis', coordinates: [-86.1581, 39.7684] },
-  { key: '13', label: 'Las Vegas', coordinates: [-115.1398, 36.1699] },
-  { key: '14', label: 'Los Angeles', coordinates: [-118.2437, 34.0522] },
-  { key: '15', label: 'Louisville', coordinates: [-85.7585, 38.2527] },
-  { key: '16', label: 'Memphis', coordinates: [-90.0490, 35.1495] },
-  { key: '17', label: 'Miami', coordinates: [-80.1918, 25.7617] },
-  { key: '18', label: 'Milwaukee', coordinates: [-87.9065, 43.0389] },
-  { key: '19', label: 'Minneapolis', coordinates: [-93.2650, 44.9778] },
-  { key: '20', label: 'Nashville', coordinates: [-86.7816, 36.1627] },
-  { key: '21', label: 'New York City', coordinates: [-74.0060, 40.7128] },
-  { key: '22', label: 'Oklahoma City', coordinates: [-97.5164, 35.4676] },
-  { key: '23', label: 'Philadelphia', coordinates: [-75.1652, 39.9526] },
-  { key: '24', label: 'Phoenix', coordinates: [-112.0740, 33.4484] },
-  { key: '25', label: 'Pittsburgh', coordinates: [-79.9959, 40.4406] },
-  { key: '26', label: 'Richmond', coordinates: [-77.4360, 37.5407] },
-  { key: '27', label: 'Sacramento', coordinates: [-121.4944, 38.5816] },
-  { key: '28', label: 'Salt Lake City', coordinates: [-111.8910, 40.7608] },
-  { key: '29', label: 'San Antonio', coordinates: [-98.4936, 29.4241] },
-  { key: '30', label: 'San Diego', coordinates: [-117.1611, 32.7157] },
-  { key: '31', label: 'San Francisco', coordinates: [-122.4194, 37.7749] },
-  { key: '32', label: 'Seattle', coordinates: [-122.3321, 47.6062] },
-  { key: '33', label: 'St. Louis', coordinates: [-90.1994, 38.6270] },
-  { key: '34', label: 'Washington D.C.', coordinates: [-77.0369, 38.9072] },
+  {
+    key: '1',
+    label: 'Atlanta',
+    coordinates: [-84.3880, 33.7490],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '2',
+    label: 'Austin',
+    coordinates: [-97.7431, 30.2672],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '3',
+    label: 'Baltimore',
+    coordinates: [-76.6122, 39.2904],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '4',
+    label: 'Boston',
+    coordinates: [-71.0589, 42.3601],
+    zoom: 12,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '5',
+    label: 'Charlotte',
+    coordinates: [-80.8431, 35.2271],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '6',
+    label: 'Chicago',
+    coordinates: [-87.6298, 41.8781],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '7',
+    label: 'Cleveland',
+    coordinates: [-81.6944, 41.4993],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '8',
+    label: 'Dallas',
+    coordinates: [-96.7970, 32.7767],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '9',
+    label: 'Denver',
+    coordinates: [-104.9903, 39.7392],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '10',
+    label: 'Detroit',
+    coordinates: [-83.0458, 42.3314],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '11',
+    label: 'Houston',
+    coordinates: [-95.3698, 29.7604],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '12',
+    label: 'Indianapolis',
+    coordinates: [-86.1581, 39.7684],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '13',
+    label: 'Las Vegas',
+    coordinates: [-115.1398, 36.1699],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '14',
+    label: 'Los Angeles',
+    coordinates: [-118.2437, 34.0522],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '15',
+    label: 'Louisville',
+    coordinates: [-85.7585, 38.2527],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '16',
+    label: 'Memphis',
+    coordinates: [-90.0490, 35.1495],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '17',
+    label: 'Miami',
+    coordinates: [-80.1918, 25.7617],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '18',
+    label: 'Milwaukee',
+    coordinates: [-87.9065, 43.0389],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '19',
+    label: 'Minneapolis',
+    coordinates: [-93.2650, 44.9778],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '20',
+    label: 'Nashville',
+    coordinates: [-86.7816, 36.1627],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '21',
+    label: 'New York City',
+    coordinates: [-74.0060, 40.7128],
+    zoom: 10.7,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '22',
+    label: 'Oklahoma City',
+    coordinates: [-97.5164, 35.4676],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '23',
+    label: 'Philadelphia',
+    coordinates: [-75.1652, 40.0026],
+    zoom: 10.7,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '24',
+    label: 'Phoenix',
+    coordinates: [-112.0740, 33.4484],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '25',
+    label: 'Pittsburgh',
+    coordinates: [-79.9959, 40.4406],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '26',
+    label: 'Richmond',
+    coordinates: [-77.4360, 37.5407],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '27',
+    label: 'Sacramento',
+    coordinates: [-121.4944, 38.5816],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '28',
+    label: 'Salt Lake City',
+    coordinates: [-111.8910, 40.7608],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '29',
+    label: 'San Antonio',
+    coordinates: [-98.4936, 29.4241],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '30',
+    label: 'San Diego',
+    coordinates: [-117.1611, 32.7157],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '31',
+    label: 'San Francisco',
+    coordinates: [-122.4194, 37.7749],
+    zoom: 10.5,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '32',
+    label: 'Seattle',
+    coordinates: [-122.3321, 47.6062],
+    zoom: 11,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '33',
+    label: 'St. Louis',
+    coordinates: [-90.1994, 38.6270],
+    zoom: 10,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  },
+  {
+    key: '34',
+    label: 'Washington D.C.',
+    coordinates: [-77.0369, 38.9072],
+    zoom: 10.5,
+    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    rasterValues: [5, 14, 19, 26, 27]
+  }
 ];
 
 const Albedopedia = () => {
@@ -97,9 +335,9 @@ const Albedopedia = () => {
               </Dropdown>
           </div>
         </div>
-        <div className="content" style={{ width: '90%' }}>
+        <div className="content" style={{ width: '100%' }}>
           <div className="albedo-map">
-            <AlbedoMap center={selectedCity.coordinates} zoom={12} />
+            <AlbedoMap center={selectedCity.coordinates} zoom={selectedCity.zoom} legendData={selectedCity.legendData} rasterValues={selectedCity.rasterValues} />
           </div>
           {/*<h2>Abstract</h2>*/}
           {/*<p>*/}

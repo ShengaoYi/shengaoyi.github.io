@@ -6,15 +6,16 @@ import './index.css';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoieWVzZW5pYW8iLCJhIjoiY2xrMjhwOWczMDBpYzNlcXBsanZmaDhjdCJ9.9dLoG5t_-OMelTBRWdlKRw';
 
-const AlbedoMap = ({ center, zoom }) => {
+const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
+  const [mapStyle, setMapStyle] = useState('mapbox://styles/mapbox/satellite-v9'); // 默认底图样式
+  const [isAlbedoLayerVisible, setIsAlbedoLayerVisible] = useState(true); // 控制Albedo图层的状态
 
   useEffect(() => {
-    // if (map.current) return; // Initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
+      style: mapStyle,
       center: center,
       zoom: zoom,
       maxBounds: [
@@ -22,7 +23,6 @@ const AlbedoMap = ({ center, zoom }) => {
         [150, 70], // Northeast coordinates
       ],
     });
-
 
     map.current.addControl(
       new MapboxGeocoder({
@@ -32,16 +32,11 @@ const AlbedoMap = ({ center, zoom }) => {
       })
     );
 
-    // Add navigation control (the +/- zoom buttons)
-    // map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-
-    // Add the tileset
     map.current.on('load', () => {
       map.current.addSource('philadelphia_albedo', {
         'type': 'raster',
         'url': 'mapbox://yeseniao.7mh79t1u',
-        'tileSize': 256,
+        'tileSize': 64,
       });
 
       map.current.addLayer({
@@ -53,34 +48,89 @@ const AlbedoMap = ({ center, zoom }) => {
             "interpolate",
             ["linear"],
             ["raster-value"],
-            1 / 258, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
-            13 / 258, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
-            19 / 258, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
-            24/ 258, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
-            32 / 258, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
           ],
-          "raster-color-range": [1 / 258, 77 / 258],
+          // "raster-color-range": [1 / 258, 77 / 258],
           "raster-resampling": "nearest",
         }
       });
 
+      // 根据初始状态设置Albedo图层的可见性
+      toggleAlbedoLayer(isAlbedoLayerVisible);
     });
 
-    // Clean up on unmount
+    // 清理函数，组件卸载时移除地图
     return () => map.current.remove();
-  }, []);
+  }, [mapStyle]);
 
   useEffect(() => {
     if (map.current) {
-      map.current.flyTo({
-        center: center,
-        zoom: zoom,
-        essential: true,
-      });
+      map.current.setCenter(center);  // 直接设置中心
+      map.current.setZoom(zoom);
     }
   }, [center, zoom]);
 
-  return <div ref={mapContainer} className="map" />;
-};
+  // 处理 Albedo 图层的显示和隐藏
+  const toggleAlbedoLayer = (isVisible) => {
+    if (map.current.getLayer('philadelphia-albedo')) {
+      map.current.setLayoutProperty(
+        'philadelphia-albedo',
+        'visibility',
+        isVisible ? 'visible' : 'none'
+      );
+    }
+  };
 
+  // 处理开关点击事件
+  const handleAlbedoToggle = () => {
+    const newVisibility = !isAlbedoLayerVisible;
+    setIsAlbedoLayerVisible(newVisibility);
+    toggleAlbedoLayer(newVisibility);
+  };
+
+  const commonColors = [
+    "rgb(0,0,0)",
+    "rgb(87,16,110)",
+    "rgb(188,55,85)",
+    "rgb(255,141,10)",
+    "rgb(253,255,165)"
+  ];
+
+  const handleStyleChange = (event) => {
+    setMapStyle('mapbox://styles/mapbox/' + event.target.value);
+  };
+
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <div ref={mapContainer} className="map" style={{ width: '100%', height: '100%' }} />
+
+      <div id="menu" className="menu">
+        <input id="satellite-v9" type="radio" name="rtoggle" value="satellite-v9" onChange={handleStyleChange} />
+        <label htmlFor="satellite-v9">Satellite</label>
+        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors-v12" onChange={handleStyleChange} />
+        <label htmlFor="outdoors-v12">Outdoors</label>
+
+        {/* Albedo Layer Toggle */}
+        <input id="toggle-albedo" type="checkbox" checked={isAlbedoLayerVisible} onChange={handleAlbedoToggle} />
+        <label htmlFor="toggle-albedo">Albedo Layer</label>
+      </div>
+
+      <div className="legend">
+        <h4>Surface Albedo</h4>
+        <div className="legend-scale">
+          {legendData.map((label, index) => (
+            <div key={index} className="legend-item">
+              <span className="legend-color" style={{ backgroundColor: commonColors[index] }}></span>
+              <span className="legend-label">{label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 export default AlbedoMap;
