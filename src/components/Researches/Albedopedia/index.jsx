@@ -15,8 +15,8 @@ const cities = [
   {
     key: '1',
     label: 'Atlanta',
-    coordinates: [-84.3880, 33.7490],
-    zoom: 10,
+    coordinates: [-84.4080, 33.7740],
+    zoom: 10.8,
     legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
     rasterValues: [5, 14, 19, 26, 27]
   },
