@@ -143,8 +143,8 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
       <div id="menu" className="menu">
         <input id="satellite-v9" type="radio" name="rtoggle" value="satellite-v9" onChange={handleStyleChange} />
         <label htmlFor="satellite-v9">Satellite</label>
-        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors-v12" onChange={handleStyleChange} />
-        <label htmlFor="outdoors-v12">Outdoors</label>
+        <input id="standard" type="radio" name="rtoggle" value="standard" onChange={handleStyleChange} />
+        <label htmlFor="standard">Map</label>
 
         {/* Albedo Layer Toggle */}
         <input id="toggle-albedo" type="checkbox" checked={isAlbedoLayerVisible} onChange={handleAlbedoToggle} />
