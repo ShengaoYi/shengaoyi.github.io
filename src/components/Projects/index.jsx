@@ -57,7 +57,7 @@ const Projects = () => (
                 </Link>
             </div>
             <br/>
-            <Divider id="researches" orientation="left" className="dynamic-font-divider">Researches</Divider>
+            <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
                 <Link to="/Albedopedia">
                     <MyCard
