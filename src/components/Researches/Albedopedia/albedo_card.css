@@ -1,0 +1,48 @@
+.city-cards {
+  width: 90%; /* 设置容器宽度 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 设置卡片之间的间隔 */
+  margin: 20px auto; /* 使容器整体居中 */
+}
+
+.city-card {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(25% - 20px); /* 固定每行显示4个卡片，并考虑间隔 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.city-card-image {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+.city-card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.city-card-content {
+  padding: 15px;
+}
+
+.city-card-stat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.city-card-stat-value {
+  font-size: 20px;
+  font-weight: bold;
+}

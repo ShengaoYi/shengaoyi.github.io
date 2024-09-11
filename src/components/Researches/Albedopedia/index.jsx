@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../Projects/index.css';
 import './index.css';
 import AlbedoMap from "./albedo_map";
-
+import AlbedoCard from "./albedo_card";
 import {Breadcrumb, Layout, Row, Tooltip} from "antd";
 import {Link} from "react-router-dom";
 import { DownOutlined } from '@ant-design/icons';
@@ -339,18 +339,39 @@ const Albedopedia = () => {
           <div className="albedo-map">
             <AlbedoMap center={selectedCity.coordinates} zoom={selectedCity.zoom} legendData={selectedCity.legendData} rasterValues={selectedCity.rasterValues} />
           </div>
-          {/*<h2>Abstract</h2>*/}
-          {/*<p>*/}
-          {/*  Urban homelessness, a manifestation of socioeconomic disparities, significantly impacts the quality of urban life. Despite its prevalence, elucidating the complex, non-linear relationships and interaction effects between various urban factors and homelessness presents considerable challenges. Traditional studies of homelessness struggle with methodological limitations and insufficient data coverage. This study utilized multi-source urban big data, the Light Gradient Boosting Machine (LightGBM) model, and SHapley Additive exPlanation (SHAP) analysis to uncover the nonlinearity and interpretability across different location types in New York City. Our results confirm that (1) the importance of features contributing to homelessness varies notably across different urban settings, such as in commercial area, the POI of information and communication exerts a greater influence, whereas in residential area, factors like felony crime density and median income emerge as critical. (2) Built environment and socioeconomic factors play a more importance role than urban landscape and transportation. (3) A majority of the examined urban factors exhibit show non-linear and threshold effects on homelessness. Thus, by uncovering specific determinants and their respective thresholds, this study makes a substantial contribution to the field of urban planning, aiming towards a sustainable, inclusive, and equitable urban future.*/}
-          {/*</p>*/}
-          {/*<h2>Overall analysis framework</h2>*/}
-          {/*<p>*/}
-          {/*  This study consists of three main parts: 1) Collect and extract features from the multi-source urban big data, including socioeconomic features, build environment, urban transportation, urban landscape,  and homeless data; 2) Machine learning models' validation, evaluation, and interpretation with SHAP; 3) Interpretation results analysis.*/}
-          {/*</p>*/}
-          {/*<h2>Policy implications</h2>*/}
-          {/*<p>*/}
-          {/*  The results from feature importance and non-linear relationship can help to find the potential high-risk areas of homelessness. This research can serve as a crucial guide for governments in allocating resources efficiently, tailoring interventions to the distinct needs of diverse homeless populations, and developing preventative strategies. For example, policies could be developed to increase the proportion of urban green spaces to exceed the identified 8.0\% threshold where a significant reduction in homelessness incidence is observed, such as incentivizing the creation of pocket parks and urban gardens in areas with high homelessness rates. Given the positive correlation of higher enclosure proportions with homelessness, urban design efforts could be targeted to prevent over-enclosure, while still providing sheltered public spaces for community activities. From the perspective of governmental responsibilities, addressing the underlying causes of homelessness is not only a moral obligation but is also pivotal for fostering societal harmony, improving public health, and boosting economic resilience. Proactively combating homelessness, in turn, alleviates pressure on public services and enhances the overall well-being of the community.*/}
-          {/*</p>*/}
+          <div className="city-cards">
+            <AlbedoCard
+              name="Amsterdam"
+              greenViewIndex={20.6}
+              populationDensity="4,908/km²"
+              imageUrl="path_to_your_image"
+            />
+            <AlbedoCard
+              name="New York"
+              greenViewIndex={15.3}
+              populationDensity="10,194/km²"
+              imageUrl="path_to_your_image"
+            />
+            <AlbedoCard
+              name="New York"
+              greenViewIndex={15.3}
+              populationDensity="10,194/km²"
+              imageUrl="path_to_your_image"
+            />
+            <AlbedoCard
+              name="New York"
+              greenViewIndex={15.3}
+              populationDensity="10,194/km²"
+              imageUrl="path_to_your_image"
+            />
+            <AlbedoCard
+              name="New York"
+              greenViewIndex={15.3}
+              populationDensity="10,194/km²"
+              imageUrl="path_to_your_image"
+            />
+
+          </div>
         </div>
       </Content>
     </div>
