@@ -11,6 +11,7 @@ import servicearea from './images/ServiceArea.png'
 import homelessness from './images/Homeless.png';
 import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
+import surface_mrt from './images/SurfaceMRT.jpg';
 import parkentrance from './images/ParkEntrance.jpg';
 import solar_LCZ from './images/Solar_LCZ.jpg';
 import GI from './images/GI_Planning.jpg';
@@ -65,6 +66,14 @@ const Projects = () => (
                         imageUrl={surface_albedo}
                         title="A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning"
                         description="Surface albedo, deep learning, high-resolution, dataset">
+                    </MyCard>
+                </Link>
+                <Link to="/SurfaceMRT">
+                    <MyCard
+                        hoverable
+                        imageUrl={surface_mrt}
+                        title="Assessing the differential impact of suburban vegetated and urban built-up areas on heat exposure environment: A case study in Los Angeles"
+                        description="Suburban vegetated areas, urban built-up areas, mean radiant temperature, urban surface albedo, SHAP">
                     </MyCard>
                 </Link>
                 <a href={'https://doi.org/10.1016/j.scs.2024.105767'} target="_blank" rel="noopener noreferrer">
