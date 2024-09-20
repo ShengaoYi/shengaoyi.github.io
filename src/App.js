@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import MyMenu from "./components/Menu";
 import myIcon from './img/Avatar.jpg';
 import Home from "./components/pages/Home";
-import {BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
+import {HashRouter, BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
 import {Avatar, Card, Space} from 'antd';
 import RATScreener from "./components/Projects/Rats";
 import Wildfire from "./components/Projects/Wildfire";
@@ -29,7 +29,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <BrowserRouter>
+                <HashRouter>
                     <ScrollToTop />
                     <Layout className={"all-layout"}>
                         <Layout>
@@ -47,8 +47,29 @@ export default class App extends React.Component {
                             <Footer className="custom-footer" style={{textAlign: 'center', background: "black", color: "white"}}>Copyright © Shengao Yi, 2023</Footer>
                         </Layout>
                     </Layout>
-                </BrowserRouter>
+                </HashRouter>
             </div>
+            // <div>
+            //     <BrowserRouter>
+            //         <ScrollToTop />
+            //         <Layout className={"all-layout"}>
+            //             <Layout>
+            //                 <Routes>
+            //                     <Route path="/" element={<Home/>}/>
+            //                     <Route path="/RATScreener" element={<RATScreener/>}/>
+            //                     <Route path="/Wildfire" element={<Wildfire/>}/>
+            //                     <Route path="/Solar" element={<Solar/>}/>
+            //                     <Route path="/Albedopedia" element={<Albedopedia/>}/>
+            //                     <Route path="/Homelessness" element={<Homelessness/>}/>
+            //                     <Route path="/OpenDefecation" element={<OpenDefecation/>}/>
+            //                     <Route path="/DRL" element={<DRL/>}/>
+            //                     <Route path="/" element={<Navigate replace to="/"/>}/>
+            //                 </Routes>
+            //                 <Footer className="custom-footer" style={{textAlign: 'center', background: "black", color: "white"}}>Copyright © Shengao Yi, 2023</Footer>
+            //             </Layout>
+            //         </Layout>
+            //     </BrowserRouter>
+            // </div>
         )
     }
 };

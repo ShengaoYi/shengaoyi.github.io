@@ -36,7 +36,7 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
 
       map.current.addSource('atlanta_albedo', {
         'type': 'raster',
-        'url': 'mapbox://yeseniao.cs09sm2b',
+        'url': 'mapbox://yeseniao.8zavyzo8',
         'tileSize': 64,
       });
 
@@ -59,16 +59,16 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
         }
       });
 
-      map.current.addSource('austin_albedo1', {
+      map.current.addSource('austin_albedo', {
         'type': 'raster',
-        'url': 'mapbox://yeseniao.3z86o2cj',
+        'url': 'mapbox://yeseniao.98956uv4',
         'tileSize': 64,
       });
 
       map.current.addLayer({
-        'id': 'austin-albedo1',
+        'id': 'austin-albedo',
         'type': 'raster',
-        'source': 'austin_albedo1',
+        'source': 'austin_albedo',
         'paint': {
           "raster-color": [
             "interpolate",
@@ -84,16 +84,16 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
         }
       });
 
-      map.current.addSource('austin_albedo2', {
+      map.current.addSource('baltimore_albedo', {
         'type': 'raster',
-        'url': 'mapbox://yeseniao.9waart6k',
+        'url': 'mapbox://yeseniao.1a037s3m',
         'tileSize': 64,
       });
 
       map.current.addLayer({
-        'id': 'austin-albedo2',
+        'id': 'baltimore-albedo',
         'type': 'raster',
-        'source': 'austin_albedo2',
+        'source': 'baltimore_albedo',
         'paint': {
           "raster-color": [
             "interpolate",
@@ -148,24 +148,6 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
       map.current.setZoom(zoom);
     }
   }, [center, zoom]);
-
-  // 处理 Albedo 图层的显示和隐藏
-  // const toggleAlbedoLayer = (isVisible) => {
-  //   if (map.current.getLayer('atlanta-albedo')) {
-  //     map.current.setLayoutProperty(
-  //         'atlanta-albedo',
-  //         'visibility',
-  //         isVisible ? 'visible' : 'none'
-  //     );
-  //   }
-  //   if (map.current.getLayer('philadelphia-albedo')) {
-  //     map.current.setLayoutProperty(
-  //         'philadelphia-albedo',
-  //         'visibility',
-  //         isVisible ? 'visible' : 'none'
-  //     );
-  //   }
-  // };
 
   const toggleAlbedoLayer = (isVisible) => {
       const layers = map.current.getStyle().layers; // 获取所有图层

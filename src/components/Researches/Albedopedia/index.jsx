@@ -17,15 +17,17 @@ const cities = [
     label: 'Atlanta',
     coordinates: [-84.4080, 33.7700],
     zoom: 10.8,
-    legendData: ["< 0.04", "< 0.11", "< 0.18", "< 0.27", "0.27 +"],
-    rasterValues: [4, 11, 18, 27, 28]
+    legendData: ["< 0.13", "< 0.19", "< 0.26", "< 0.36", "0.36 +"],
+    // rasterValues: [5, 19, 26, 36, 37]
+    rasterValues: [5, 14, 19, 26, 27]
   },
   {
     key: '2',
     label: 'Austin',
-    coordinates: [-97.7431, 30.2672],
+    coordinates: [-97.7431, 30.3072],
     zoom: 10,
-    legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
+    legendData: ["< 0.12", "< 0.16", "< 0.22", "< 0.31", "0.32 +"],
+    // rasterValues: [12, 16, 22, 31, 32]
     rasterValues: [5, 14, 19, 26, 27]
   },
   {
@@ -34,7 +36,7 @@ const cities = [
     coordinates: [-76.6122, 39.2904],
     zoom: 11,
     legendData: ["< 0.05", "< 0.14", "< 0.19", "< 0.26", "0.26 +"],
-    rasterValues: [5, 14, 19, 26, 27]
+    rasterValues: [9, 16, 23, 34, 35]
   },
   {
     key: '4',
