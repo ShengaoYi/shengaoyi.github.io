@@ -75,7 +75,7 @@ Angeles</h1>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={700} src={shap} preview={false}/>
                 </div>
-                <h2>Non-linear relationships between homeless incidence and built environment</h2>
+                <h2>Non-linear relationships between heat exposure and suburban vegetated areas variables</h2>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={700} src={green_albedo} preview={false}/>
                 </div>
