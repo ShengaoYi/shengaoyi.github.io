@@ -28,7 +28,7 @@ const Solar = () => (
                     ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image width={650} src={solar1} preview={false}/>
             </div>

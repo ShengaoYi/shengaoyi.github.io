@@ -29,7 +29,7 @@ const OpenDefecation = () => (
                     ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image width={650} src={opendefecation} preview={false}/>
             </div>

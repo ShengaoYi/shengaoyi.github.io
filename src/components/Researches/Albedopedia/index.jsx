@@ -325,6 +325,7 @@ const Albedopedia = () => {
             ]}
           />
         </Row>
+        <br/>
         <div className="title-container">
           <div className="title">
               <Dropdown overlay={menu} trigger={['click']} overlayStyle={{ width: 150 }}>

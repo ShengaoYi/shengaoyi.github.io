@@ -29,7 +29,7 @@ const Wildfire = () => (
                   ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image src={wildfire} preview={false}/>
             </div>

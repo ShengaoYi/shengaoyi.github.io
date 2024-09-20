@@ -29,7 +29,7 @@ const RATScreener = () => (
                     ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image src={rats} preview={false}/>
             </div>

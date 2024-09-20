@@ -31,7 +31,7 @@ const Homelessness = () => (
                     ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image width={650} src={homeless} preview={false}/>
             </div>

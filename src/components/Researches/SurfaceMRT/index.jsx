@@ -32,7 +32,7 @@ const SurfaceMRT = () => (
                     ]}
                 />
             </Row>
-
+            <br/>
             <div className="project-image">
                 <Image width={650} src={surfaceMRT} preview={false}/>
             </div>
