@@ -109,9 +109,159 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
         }
       });
 
+      map.current.addSource('dc_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.243kebpe',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'dc-albedo',
+        'type': 'raster',
+        'source': 'dc_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
+      map.current.addSource('denver_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.15smwmjf',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'denver-albedo',
+        'type': 'raster',
+        'source': 'denver_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
+      map.current.addSource('detroit_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.2ht27iwr',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'detroit-albedo',
+        'type': 'raster',
+        'source': 'detroit_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
+      map.current.addSource('lasvegas_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.alje48lk',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'lasvegas-albedo',
+        'type': 'raster',
+        'source': 'lasvegas_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
+      map.current.addSource('milwaukee_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.d3c1ydwd',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'milwaukee-albedo',
+        'type': 'raster',
+        'source': 'milwaukee_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
+      map.current.addSource('minneapolis_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.639536h5',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'minneapolis-albedo',
+        'type': 'raster',
+        'source': 'minneapolis_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
       map.current.addSource('philadelphia_albedo', {
         'type': 'raster',
-        'url': 'mapbox://yeseniao.7mh79t1u',
+        'url': 'mapbox://yeseniao.18yz80kb',
         'tileSize': 64,
       });
 
