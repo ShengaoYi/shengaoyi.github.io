@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 import { Button } from 'antd';
 import { GithubOutlined, LinkedinOutlined, MailOutlined, FileTextOutlined } from '@ant-design/icons';
-import CV from './Shengao_Yi_CV.pdf'
-
+import CV from './Shengao_Yi_CV.pdf';
+// import { FaGraduationCap } from 'react-icons/fa';
 
 const About = () => (
   <div id="about">
@@ -16,6 +16,9 @@ const About = () => (
           <a href="https://www.linkedin.com/in/shengao-yi-918738236/" target="_blank" className="social-link">
               <LinkedinOutlined />
           </a>
+          {/*<a href="https://scholar.google.com/citations?user=nY2VtioAAAAJ&hl=en&authuser=1" target="_blank" className="social-link">*/}
+          {/*  <FaGraduationCap />  /!* Google Scholar link *!/*/}
+          {/*</a>*/}
           <a href="mailto:yishengao@alumni.upenn.edu" className="social-link">
               <MailOutlined />
               yishengao@alumni.upenn.edu
