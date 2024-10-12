@@ -15,6 +15,7 @@ import surface_mrt from './images/SurfaceMRT.jpg';
 import parkentrance from './images/ParkEntrance.jpg';
 import solar_LCZ from './images/Solar_LCZ.jpg';
 import GI from './images/GI_Planning.jpg';
+import NPE from './images/NPE.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -76,6 +77,15 @@ const Projects = () => (
                         description="Suburban vegetated areas, urban built-up areas, mean radiant temperature, urban surface albedo, SHAP">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.trd.2024.104456'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={NPE}
+                        title="Enhancing transit-oriented development sustainability through the integrated node-place-ecology (NPE) model"
+                        journal="Accepted by Transportation Research Part D: Transport and Environment"
+                        description="Transit-oriented development, Node-place model, Node-place-ecology model, Timeline-based, Sustainable development line">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.scs.2024.105767'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
