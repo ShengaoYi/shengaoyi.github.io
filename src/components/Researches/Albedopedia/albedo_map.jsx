@@ -211,6 +211,31 @@ const AlbedoMap = ({ center, zoom, legendData, rasterValues }) => {
         }
       });
 
+      map.current.addSource('miami_albedo', {
+        'type': 'raster',
+        'url': 'mapbox://yeseniao.6vztnv44',
+        'tileSize': 64,
+      });
+
+      map.current.addLayer({
+        'id': 'miami-albedo',
+        'type': 'raster',
+        'source': 'miami_albedo',
+        'paint': {
+          "raster-color": [
+            "interpolate",
+            ["linear"],
+            ["raster-value"],
+            rasterValues[0] / 255, "rgb(0,0,0)",     // 第一个停止点，值为5，颜色为黑色
+            rasterValues[1] / 255, "rgb(87,16,110)", // 第二个停止点，值为14，颜色为紫色
+            rasterValues[2] / 255, "rgb(188,55,85)",  // 第三个停止点，值为19，颜色为红色
+            rasterValues[3] / 255, "rgb(255,141,10)", // 第四个停止点，值为26，颜色为橙色
+            rasterValues[4] / 255, "rgb(253,255,165)"  // 第五个停止点，值为76，颜色为黄色
+          ],
+          "raster-resampling": "nearest",
+        }
+      });
+
       map.current.addSource('milwaukee_albedo', {
         'type': 'raster',
         'url': 'mapbox://yeseniao.d3c1ydwd',
