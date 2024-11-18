@@ -16,6 +16,7 @@ import parkentrance from './images/ParkEntrance.jpg';
 import solar_LCZ from './images/Solar_LCZ.jpg';
 import GI from './images/GI_Planning.jpg';
 import NPE from './images/NPE.jpg';
+import TOD from './images/TOD.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -77,6 +78,15 @@ const Projects = () => (
                         description="Suburban vegetated areas, urban built-up areas, mean radiant temperature, urban surface albedo, SHAP">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.jenvman.2024.123274'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={TOD}
+                        title="Are different TOD circles oriented towards sustainability amidst urban shrinkage? Evidence from urban areas to suburbs in the Tokyo metropolitan area"
+                        journal="Accepted by Journal of Environmental Management"
+                        description="Transit-Oriented development (TOD), TOD circles, Node-place-ecology model, Sustainable development Node-place model">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.trd.2024.104456'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
