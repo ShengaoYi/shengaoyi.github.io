@@ -56,8 +56,15 @@ const About = () => (
       <section>
           <h2>Previous employment</h2>
           <div className="resume-item">
-              <div className="resume-item-title">Research Intern at Urban Mobility Lab, MIT</div>
-              <div className="resume-item-time">2023/06–</div>
+              <div className="resume-item-title">Associate Fellow at <a href="https://ldi.upenn.edu/fellows/fellows-directory/shengao-yi/" target="_blank" rel="noopener noreferrer">Leonard Davis Institute of Health Economics (Penn LDI)</a></div>
+              <div className="resume-item-time">2024/12–</div>
+          </div>
+          <ul>
+              <li>Leveraging AI and high-resolution spatio-temporal modeling to explore the impacts of heat exposure on vulnerable populations and public health outcomes.</li>
+          </ul>
+          <div className="resume-item">
+              <div className="resume-item-title">Research Intern at <a href="https://mobility.mit.edu/" target="_blank" rel="noopener noreferrer">Urban Mobility Lab, MIT</a></div>
+              <div className="resume-item-time">2023/06–2024/01</div>
           </div>
           <ul>
               <li>Conducting a research project focusing on investigating the impacts of misallocation of bus drivers by looking at socioeconomic characteristics associated with bus routes.</li>
