@@ -17,6 +17,7 @@ import solar_LCZ from './images/Solar_LCZ.jpg';
 import GI from './images/GI_Planning.jpg';
 import NPE from './images/NPE.jpg';
 import TOD from './images/TOD.jpg';
+import SVG from './images/SVG.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -75,9 +76,19 @@ const Projects = () => (
                         hoverable
                         imageUrl={surface_mrt}
                         title="Assessing the differential impact of suburban vegetated and urban built-up areas on heat exposure environment: A case study in Los Angeles"
-                        description="Suburban vegetated areas, urban built-up areas, mean radiant temperature, urban surface albedo, SHAP">
+                        journal="Accepted by Building and Environment"
+                        description="Vegetated areas, Built-up areas, mean radiant temperature, urban surface albedo, SHAP">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1177/23998083241312272'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={SVG}
+                        title="Exploring the associations between street-view green space quantity and quality, and influenza in Guangzhou, China through machine learning and spatial regression: A socio-economic equity perspective"
+                        journal="Accepted by Environment and Planning B: Urban Analytics and City Science"
+                        description="Street-view green space, Quantity and quality, Influenza, Socio-economic equity, Street-view data">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.jenvman.2024.123274'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable

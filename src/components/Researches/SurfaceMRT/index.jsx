@@ -37,28 +37,16 @@ const SurfaceMRT = () => (
                 <Image width={650} src={surfaceMRT} preview={false}/>
             </div>
             <div className="title">
-                <h1>Assessing the differential impact of suburban vegetated and urban built-up areas on heat exposure environment: A case study in Los
-Angeles</h1>
-                <p className="basic-info">This paper is under view by <a href="https://www.sciencedirect.com/journal/sustainable-cities-and-society" target="_blank" rel="noopener noreferrer">Sustainable Cities and Society</a>.</p>
+                <h1>Assessing the differential impact of vegetated and built-up areas on heat exposure environment: A case study of Los Angeles</h1>
+                <p className="basic-info">This paper is accepted by <a href="https://doi.org/10.1016/j.buildenv.2025.112538" target="_blank" rel="noopener noreferrer">Building and Environment</a>.</p>
             </div>
             <div className="content">
                 <h2>Abstract</h2>
-                <p>The urban heat island (UHI) effect significantly influences urban environments, exacerbating
-                heat stress, energy consumption, and public health challenges. Traditional studies often combine
-                vegetated and built-up areas, overlooking their distinct thermal behaviors, and rely on Land Surface
-                Temperature (LST), which does not fully capture human heat exposure. This study addresses
-                these gaps by using mean radiant temperature (Tmrt) at a 1-meter resolution to assess heat exposure
-                in Los Angeles, distinguishing between suburban vegetated areas (SVA) and urban built-up
-                areas (UBA). We developed distinct indicator systems for these areas and applied random forest
-                regression, spatial error modeling, and SHapley Additive exPlanations (SHAP) to evaluate their
-                independent effects on Tmrt. Results show that suburban vegetated areas, particularly tree canopies
-                and wetlands, exhibit strong cooling effects on Tmrt, while impervious surfaces in built-up areas,
-                including roads and bare earth, are positively associated with increased heat exposure. The study
-                also highlights the relative importance of variables and nonlinear impacts of indicator thresholds
-                on Tmrt. Notably, increasing albedo in impervious surfaces may elevate perceived heat exposure,
-                challenging conventional cooling strategies. These findings provide critical insights for urban
-                planning, advocating targeted approaches to mitigate heat stress and improve thermal comfort in
-                different area zones.</p>
+                <p>The urban heat island (UHI) effect exacerbates heat stress, energy consumption, and public health challenges in urban environments. Traditional studies often combine vegetated and built-up areas, overlooking their distinct thermal behaviors, and rely on Land Surface Temperature (LST), which does not fully capture the heat exposure perceived by humans. This study addresses these gaps by using 1-meter resolution mean radiant temperature (T_mrt) to evaluate heat exposure in Los Angeles, separating vegetated areas (VA) and built-up areas (BA). We developed distinct indicator systems for VA and BA and applied random forest regression, spatial error modeling, and SHapley Additive exPlanations (SHAP) to assess their independent effects on
+T_mrt. Results indicate that vegetated areas, particularly tree canopies and wetlands, provide significant cooling effects on
+T_mrt, while impervious surfaces like asphalt roads and bare earth increase heat exposure. In built-up areas, the sky view factor showed the strongest positive correlation with
+T_mrt, while residential areas demonstrated a negative correlation. The study also highlights the relative importance of variables and nonlinear impacts of indicator thresholds on
+T_mrt. Notably, increasing albedo in impervious surfaces, a conventional cooling strategy to reduce LST, may elevate perceived heat exposure, challenging its effectiveness. These findings emphasize the need for urban planners to prioritize tree canopy coverage in heat hotspots and develop context-specific strategies that address the nonlinear impacts of urban surfaces on heat exposure. Material selection in built-up areas should carefully consider albedo impacts to balance cooling benefits with potential thermal discomfort, providing actionable insights for sustainable urban design.</p>
                 <h2>Overall framework</h2>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={700} src={framework} preview={false}/>
@@ -71,11 +59,11 @@ Angeles</h1>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={350} src={gridMRT} preview={false}/> <Image width={350} src={LISA} preview={false}/>
                 </div>
-                <h2>The global and local RI of SVA and UBA variables from the SHAP model</h2>
+                <h2>The global and local RI of VA and BA variables from the SHAP model</h2>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={700} src={shap} preview={false}/>
                 </div>
-                <h2>Non-linear relationships between heat exposure and suburban vegetated areas variables</h2>
+                <h2>Non-linear relationships between heat exposure and vegetated areas variables</h2>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Image width={700} src={green_albedo} preview={false}/>
                 </div>
