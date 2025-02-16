@@ -18,6 +18,7 @@ import GI from './images/GI_Planning.jpg';
 import NPE from './images/NPE.jpg';
 import TOD from './images/TOD.jpg';
 import SVG from './images/SVG.jpg';
+import Waste from './images/Waste.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -71,6 +72,15 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.scs.2025.106168'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={Waste}
+                        title="Optimizing urban agricultural waste planning and management to enhance sustainability: Strategies for three types of cities"
+                        journal="Accepted by Sustainable Cities and Society"
+                        description="Urban waste, Sustainability, Spatial planning, MCDM, Scenario analysis, Renewable energy">
+                    </MyCard>
+                </a>
                 <Link to="/SurfaceMRT">
                     <MyCard
                         hoverable
