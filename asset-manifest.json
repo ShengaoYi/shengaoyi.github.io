@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.201444bd.css",
-    "main.js": "/static/js/main.45d0cae7.js",
+    "main.js": "/static/js/main.2280e0cd.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/SurfaceMRT.jpg": "/static/media/SurfaceMRT.6ee15507bf9982e76586.jpg",
@@ -15,6 +15,7 @@
     "static/media/Solar.png": "/static/media/Solar.5c6cc628a81d5ff821a5.png",
     "static/media/LA_MRT_Albedo_Grid.jpg": "/static/media/LA_MRT_Albedo_Grid.aac75b17248fcba9ea87.jpg",
     "static/media/GI_Planning.jpg": "/static/media/GI_Planning.20a43eb34ce48093097a.jpg",
+    "static/media/Waste.jpg": "/static/media/Waste.347ff237871caddb79ac.jpg",
     "static/media/Framework.jpg": "/static/media/Framework.0dfaa6033da66753618a.jpg",
     "static/media/ServiceArea.png": "/static/media/ServiceArea.5829795b5456acf06683.png",
     "static/media/Homeless.png": "/static/media/Homeless.de7893ea5f1a6ff911b2.png",
@@ -51,11 +52,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.201444bd.css.map": "/static/css/main.201444bd.css.map",
-    "main.45d0cae7.js.map": "/static/js/main.45d0cae7.js.map",
+    "main.2280e0cd.js.map": "/static/js/main.2280e0cd.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.201444bd.css",
-    "static/js/main.45d0cae7.js"
+    "static/js/main.2280e0cd.js"
   ]
 }
