@@ -19,6 +19,7 @@ import NPE from './images/NPE.jpg';
 import TOD from './images/TOD.jpg';
 import SVG from './images/SVG.jpg';
 import Waste from './images/Waste.jpg';
+import UFUG_128776 from './images/UFUG128776.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -72,6 +73,15 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.1016/j.ufug.2025.128776'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={UFUG_128776}
+                        title="Adaptive ranking of specific tree species for targeted green infrastructure intervention in response to urban hazards"
+                        journal="Accepted by Urban Forestry & Urban Greening"
+                        description="Green infrastructure planning, Nature-based solutions, Decision-making, i-Tree Eco model, Urban hazards, Multifunctionality">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.scs.2025.106168'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
