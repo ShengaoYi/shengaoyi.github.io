@@ -84,30 +84,73 @@ const About = () => (
              <li>Working on a project to detect fraudulent user behavior by analyzing multi-source spatio-temporal data and WeChat user trajectories.</li>
           </ul>
       </section>
-      <section className="skillset">
-          <h2>Skillset</h2>
-          <div className="resume-item">
-             <div className="resume-item-title">Geospatial Data Science</div>
+      <section style={{ display: 'flex', justifyContent: 'space-between', gap: '40px' }}>
+          <div style={{ flex: 1 }}>
+            <h2>Skillset</h2>
+            <div className="resume-item">
+               <div className="resume-item-title">Geospatial Data Science</div>
+            </div>
+            <ul>
+                <li>Tools: Python, R, C++, Javascript, Pytorch, Tensorflow</li>
+                <li>Software: ArcGIS, QGIS, Envi</li>
+            </ul>
+            <div className="resume-item">
+               <div className="resume-item-title">Web Development</div>
+            </div>
+            <ul>
+                <li>Front-end: React.</li>
+                <li>Back-end: Flask, Node.js, Python, and SQL databases.</li>
+                <li>Cloud computing: Experienced with Google Cloud Platform.</li>
+            </ul>
+            <div className="resume-item">
+               <div className="resume-item-title">Visualization</div>
+            </div>
+            <ul>
+                <li>Mapbox.gl, Deck.gl, Kepler.gl, MapVGL</li>
+            </ul>
           </div>
-          <ul>
-              <li>Tools: Python, R, C++, Javascript, Pytorch, Tensorflow</li>
-              <li>Software: ArcGIS, QGIS, Envi</li>
-          </ul>
-          <div className="resume-item">
-             <div className="resume-item-title">Web Development</div>
+
+          <div style={{ flex: 1 }}>
+            <h2>Reviewed Journals</h2>
+            <ul>
+              <li>Nature Health</li>
+              <li>Computers, Environment and Urban Systems</li>
+              <li>Sustainable Cities and Society</li>
+              <li>Scientific Data</li>
+              <li>International Journal of Digital Earth</li>
+              <li>Applied Geography</li>
+              <li>Journal of Transport Geography</li>
+              <li>Travel Behaviour and Society</li>
+              <li>Computational Urban Science</li>
+              <li>and so on...</li>
+            </ul>
           </div>
-          <ul>
-              <li>Front-end: React.</li>
-              <li>Back-end: Flask, Node.js, Python, and SQL databases.</li>
-              <li>Cloud computing: Experienced with Google Cloud Platform.</li>
-          </ul>
-          <div className="resume-item">
-             <div className="resume-item-title">Visualization</div>
-          </div>
-          <ul>
-              <li>Mapbox.gl, Deck.gl, Kepler.gl, MapVGL</li>
-          </ul>
       </section>
+
+      {/*<section className="skillset">*/}
+      {/*    <h2>Skillset</h2>*/}
+      {/*    <div className="resume-item">*/}
+      {/*       <div className="resume-item-title">Geospatial Data Science</div>*/}
+      {/*    </div>*/}
+      {/*    <ul>*/}
+      {/*        <li>Tools: Python, R, C++, Javascript, Pytorch, Tensorflow</li>*/}
+      {/*        <li>Software: ArcGIS, QGIS, Envi</li>*/}
+      {/*    </ul>*/}
+      {/*    <div className="resume-item">*/}
+      {/*       <div className="resume-item-title">Web Development</div>*/}
+      {/*    </div>*/}
+      {/*    <ul>*/}
+      {/*        <li>Front-end: React.</li>*/}
+      {/*        <li>Back-end: Flask, Node.js, Python, and SQL databases.</li>*/}
+      {/*        <li>Cloud computing: Experienced with Google Cloud Platform.</li>*/}
+      {/*    </ul>*/}
+      {/*    <div className="resume-item">*/}
+      {/*       <div className="resume-item-title">Visualization</div>*/}
+      {/*    </div>*/}
+      {/*    <ul>*/}
+      {/*        <li>Mapbox.gl, Deck.gl, Kepler.gl, MapVGL</li>*/}
+      {/*    </ul>*/}
+      {/*</section>*/}
   </div>
 );
 
