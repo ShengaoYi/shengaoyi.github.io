@@ -339,42 +339,45 @@ const Albedopedia = () => {
           </div>
         </div>
         <div className="content" style={{ width: '100%' }}>
+          <div className="title">
+                <h1><a href="https://doi.org/10.1038/s41597-025-05109-2" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(241, 138, 35)', textDecoration: 'none' }}>A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning</a></h1>
+                <h2>Dataset also available at <a href="https://drive.google.com/drive/folders/1t5S11mFsMLBbz5EAIFVE7N98grjPUpzj?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(241, 138, 35)', textDecoration: 'none' }}>Google Drive</a></h2>
+          </div>
           <div className="albedo-map">
             <AlbedoMap center={selectedCity.coordinates} zoom={selectedCity.zoom} legendData={selectedCity.legendData} rasterValues={selectedCity.rasterValues} />
           </div>
-          <div className="city-cards">
-            <AlbedoCard
-              name="Amsterdam"
-              greenViewIndex={20.6}
-              populationDensity="4,908/km²"
-              imageUrl="path_to_your_image"
-            />
-            <AlbedoCard
-              name="New York"
-              greenViewIndex={15.3}
-              populationDensity="10,194/km²"
-              imageUrl="path_to_your_image"
-            />
-            <AlbedoCard
-              name="New York"
-              greenViewIndex={15.3}
-              populationDensity="10,194/km²"
-              imageUrl="path_to_your_image"
-            />
-            <AlbedoCard
-              name="New York"
-              greenViewIndex={15.3}
-              populationDensity="10,194/km²"
-              imageUrl="path_to_your_image"
-            />
-            <AlbedoCard
-              name="New York"
-              greenViewIndex={15.3}
-              populationDensity="10,194/km²"
-              imageUrl="path_to_your_image"
-            />
-
-          </div>
+          {/*<div className="city-cards">*/}
+          {/*  <AlbedoCard*/}
+          {/*    name="Amsterdam"*/}
+          {/*    greenViewIndex={20.6}*/}
+          {/*    populationDensity="4,908/km²"*/}
+          {/*    imageUrl="path_to_your_image"*/}
+          {/*  />*/}
+          {/*  <AlbedoCard*/}
+          {/*    name="New York"*/}
+          {/*    greenViewIndex={15.3}*/}
+          {/*    populationDensity="10,194/km²"*/}
+          {/*    imageUrl="path_to_your_image"*/}
+          {/*  />*/}
+          {/*  <AlbedoCard*/}
+          {/*    name="New York"*/}
+          {/*    greenViewIndex={15.3}*/}
+          {/*    populationDensity="10,194/km²"*/}
+          {/*    imageUrl="path_to_your_image"*/}
+          {/*  />*/}
+          {/*  <AlbedoCard*/}
+          {/*    name="New York"*/}
+          {/*    greenViewIndex={15.3}*/}
+          {/*    populationDensity="10,194/km²"*/}
+          {/*    imageUrl="path_to_your_image"*/}
+          {/*  />*/}
+          {/*  <AlbedoCard*/}
+          {/*    name="New York"*/}
+          {/*    greenViewIndex={15.3}*/}
+          {/*    populationDensity="10,194/km²"*/}
+          {/*    imageUrl="path_to_your_image"*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
       </Content>
     </div>

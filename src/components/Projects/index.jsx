@@ -70,6 +70,7 @@ const Projects = () => (
                         hoverable
                         imageUrl={surface_albedo}
                         title="A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning"
+                        journal="Accepted by Scientific Data (Nature Portfolio)"
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
