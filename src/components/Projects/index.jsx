@@ -8,7 +8,7 @@ import solar from './images/Solar.png';
 import svi from './images/StreetView.jpg';
 import pgRouting from './images/pgRouting.png';
 import servicearea from './images/ServiceArea.png'
-import homelessness from './images/Homeless.png';
+import homelessness from './images/Homelessness.jpg';
 import opendefecation from './images/OpenDefecation.jpeg';
 import surface_albedo from './images/Surface_Albedo.jpg';
 import surface_mrt from './images/SurfaceMRT.jpg';
@@ -20,6 +20,8 @@ import TOD from './images/TOD.jpg';
 import SVG from './images/SVG.jpg';
 import Waste from './images/Waste.jpg';
 import UFUG_128776 from './images/UFUG128776.jpg';
+import Seasonal_bias from './images/Seasonal.png';
+import HFPCS from './images/HFPCS.png';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -74,6 +76,33 @@ const Projects = () => (
                         description="Surface albedo, deep learning, high-resolution, dataset">
                     </MyCard>
                 </Link>
+                <a href={'https://doi.org/10.3390/smartcities8030083'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={HFPCS}
+                        title="Evaluating the Quality of High-Frequency Pedestrian Commuting Streets: A Data-Driven Approach in Shenzhen"
+                        journal="Accepted by Smart Cities"
+                        description="High-frequency pedestrian commuting streets, Street quality assessment, Big data; Human-centric urban design">
+                    </MyCard>
+                </a>
+                <Link to="/Homelessness">
+                    <MyCard
+                        hoverable
+                        imageUrl={homelessness}
+                        title="Uncovering nonlinear urban factors of homelessness: Evidence from New York City using interpretable machine learning"
+                        journal="Accepted by Environment and Planning B: Urban Analytics and City Science"
+                        description="Homelessness, Urban big data, Street view imagery, Interpretable machine learning, SHapley additive explanations">
+                    </MyCard>
+                </Link>
+                <a href={'https://doi.org/10.1016/j.compenvurbsys.2025.102302'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={Seasonal_bias}
+                        title="Quantifying seasonal bias in street view imagery for urban form assessment: A global analysis of 40 cities"
+                        journal="Accepted by Computers, Environment and Urban Systems"
+                        description="Google street view, Urban sensing, GeoAI, Data quality, Consistency">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.ufug.2025.128776'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
@@ -164,15 +193,6 @@ const Projects = () => (
                         description="Urban parks, Park entrance, Accessibility, 15-minute city">
                     </MyCard>
                 </a>
-                <Link to="/Homelessness">
-                    <MyCard
-                        hoverable
-                        imageUrl={homelessness}
-                        title="Exploring urban homelessness using multi-source urban big data and interpretable machine learning: A case study in New York City"
-                        journal="Under reviewed by Journal of Environmental Management"
-                        description="Homelessness, street view imagery, IML, SHAP">
-                    </MyCard>
-                </Link>
                 <a href={DRL_paper} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
@@ -182,15 +202,15 @@ const Projects = () => (
                         description="Deep reinforcement learning">
                     </MyCard>
                 </a>
-                <a href={'https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10000232&AN=171793816&h=Szz13CBriVmeoTOHKt6PNEP1awcu3RbygOnwpJWcgFW7fIs2QzTvdp2bX7L6IDvceRDK7yQHrVReJeYM6cqpcQ%3D%3D&crl=c'} target="_blank" rel="noopener noreferrer">
-                    <MyCard
-                        hoverable
-                        imageUrl={Frequent_street}
-                        title="High Frequency Street"
-                        journal="Accepted by South Architecture"
-                        description="">
-                    </MyCard>
-                </a>
+                {/*<a href={'https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=10000232&AN=171793816&h=Szz13CBriVmeoTOHKt6PNEP1awcu3RbygOnwpJWcgFW7fIs2QzTvdp2bX7L6IDvceRDK7yQHrVReJeYM6cqpcQ%3D%3D&crl=c'} target="_blank" rel="noopener noreferrer">*/}
+                {/*    <MyCard*/}
+                {/*        hoverable*/}
+                {/*        imageUrl={Frequent_street}*/}
+                {/*        title="High Frequency Street"*/}
+                {/*        journal="Accepted by South Architecture"*/}
+                {/*        description="">*/}
+                {/*    </MyCard>*/}
+                {/*</a>*/}
             </div>
             <br/>
             <Divider id="funny-tool" orientation="left" className="dynamic-font-divider">Funny Tools</Divider>
