@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.201444bd.css",
-    "main.js": "/static/js/main.d802eff5.js",
+    "main.js": "/static/js/main.a44b9cff.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
     "static/media/SurfaceMRT.jpg": "/static/media/SurfaceMRT.6ee15507bf9982e76586.jpg",
@@ -12,14 +12,17 @@
     "static/media/Land use.jpg": "/static/media/Land use.7ca3a106b843bc12b793.jpg",
     "static/media/DRL.pdf": "/static/media/DRL.923750b997e7cb876570.pdf",
     "static/media/SHAP.jpg": "/static/media/SHAP.5572e89264ed634a005b.jpg",
+    "static/media/HFPCS.png": "/static/media/HFPCS.b7894185fd62ef5f94b6.png",
     "static/media/Solar.png": "/static/media/Solar.5c6cc628a81d5ff821a5.png",
     "static/media/LA_MRT_Albedo_Grid.jpg": "/static/media/LA_MRT_Albedo_Grid.aac75b17248fcba9ea87.jpg",
     "static/media/GI_Planning.jpg": "/static/media/GI_Planning.20a43eb34ce48093097a.jpg",
     "static/media/Waste.jpg": "/static/media/Waste.347ff237871caddb79ac.jpg",
     "static/media/Framework.jpg": "/static/media/Framework.0dfaa6033da66753618a.jpg",
+    "static/media/Seasonal.png": "/static/media/Seasonal.ba0788d4da4a80a1e2c4.png",
     "static/media/ServiceArea.png": "/static/media/ServiceArea.5829795b5456acf06683.png",
     "static/media/Homeless.png": "/static/media/Homeless.de7893ea5f1a6ff911b2.png",
     "static/media/Solar_LCZ.jpg": "/static/media/Solar_LCZ.57384d087591bf7a5900.jpg",
+    "static/media/Homelessness.jpg": "/static/media/Homelessness.3fc10276a21f6f5c3af9.jpg",
     "static/media/Table.png": "/static/media/Table.6580baea7af714ccea40.png",
     "static/media/MRT_Albedo_LISA.jpg": "/static/media/MRT_Albedo_LISA.6f99028ec3c169a60a8b.jpg",
     "static/media/OpenDefecation.jpeg": "/static/media/OpenDefecation.403b8c39f53743595e68.jpeg",
@@ -53,11 +56,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.201444bd.css.map": "/static/css/main.201444bd.css.map",
-    "main.d802eff5.js.map": "/static/js/main.d802eff5.js.map",
+    "main.a44b9cff.js.map": "/static/js/main.a44b9cff.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.201444bd.css",
-    "static/js/main.d802eff5.js"
+    "static/js/main.a44b9cff.js"
   ]
 }
