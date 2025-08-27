@@ -22,6 +22,7 @@ import Waste from './images/Waste.jpg';
 import UFUG_128776 from './images/UFUG128776.jpg';
 import Seasonal_bias from './images/Seasonal.png';
 import HFPCS from './images/HFPCS.png';
+import UTCI from './images/UTCI.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -67,6 +68,15 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
+                <a href={'https://doi.org/10.3390/smartcities8030083'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={UTCI}
+                        title="Hyperlocal Heat Stress around Bus Stops in Philadelphia: Insights from Spatio-Temporal Microclimate Modeling and Explainable AI"
+                        journal="Accepted by Computers, Environment and Urban Systems"
+                        description="Heat stress, Bus stops, Urban environment, SHAP, Nonlinear relationship, UTCI">
+                    </MyCard>
+                </a>
                 <Link to="/Albedopedia">
                     <MyCard
                         hoverable
@@ -82,7 +92,7 @@ const Projects = () => (
                         imageUrl={HFPCS}
                         title="Evaluating the Quality of High-Frequency Pedestrian Commuting Streets: A Data-Driven Approach in Shenzhen"
                         journal="Accepted by Smart Cities"
-                        description="High-frequency pedestrian commuting streets, Street quality assessment, Big data; Human-centric urban design">
+                        description="High-frequency pedestrian commuting streets, Street quality assessment, Big data, Human-centric urban design">
                     </MyCard>
                 </a>
                 <Link to="/Homelessness">
