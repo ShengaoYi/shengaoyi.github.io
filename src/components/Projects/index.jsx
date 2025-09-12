@@ -68,7 +68,7 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
-                <a href={'https://doi.org/10.3390/smartcities8030083'} target="_blank" rel="noopener noreferrer">
+                <a href={'https://doi.org/10.1016/j.compenvurbsys.2025.102341'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
                         imageUrl={UTCI}
