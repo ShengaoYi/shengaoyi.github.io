@@ -20,6 +20,7 @@ import TOD from './images/TOD.jpg';
 import SVG from './images/SVG.jpg';
 import Waste from './images/Waste.jpg';
 import UFUG_128776 from './images/UFUG128776.jpg';
+import GSM_UTCI from './images/GSM_UTCI.jpg';
 import Seasonal_bias from './images/Seasonal.png';
 import HFPCS from './images/HFPCS.png';
 import UTCI from './images/UTCI.jpg';
@@ -68,6 +69,15 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
+                <a href={'https://doi.org/10.1016/j.ufug.2025.129101'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={GSM_UTCI}
+                        title="Planning for cooler cities: A multimodal AI framework for hyperlocal spatio-temporal urban heat stress prediction and mitigation"
+                        journal="Accepted by Urban Forestry & Urban Greening"
+                        description="Heat stress, Multimodal deep learning, UTCI, SOLWEIG, Landscape transformation">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.compenvurbsys.2025.102341'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
