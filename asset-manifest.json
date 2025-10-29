@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.201444bd.css",
-    "main.js": "/static/js/main.c62b72f6.js",
+    "main.js": "/static/js/main.00b7492e.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/UTCI.jpg": "/static/media/UTCI.d19eb8e18d901debf160.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
@@ -26,6 +26,7 @@
     "static/media/Solar_LCZ.jpg": "/static/media/Solar_LCZ.57384d087591bf7a5900.jpg",
     "static/media/Homelessness.jpg": "/static/media/Homelessness.3fc10276a21f6f5c3af9.jpg",
     "static/media/Table.png": "/static/media/Table.6580baea7af714ccea40.png",
+    "static/media/GSM_UTCI.jpg": "/static/media/GSM_UTCI.845e4cfda1555ba88d45.jpg",
     "static/media/MRT_Albedo_LISA.jpg": "/static/media/MRT_Albedo_LISA.6f99028ec3c169a60a8b.jpg",
     "static/media/OpenDefecation.jpeg": "/static/media/OpenDefecation.403b8c39f53743595e68.jpeg",
     "static/media/UFUG128776.jpg": "/static/media/UFUG128776.daa047366708427fb586.jpg",
@@ -57,11 +58,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.201444bd.css.map": "/static/css/main.201444bd.css.map",
-    "main.c62b72f6.js.map": "/static/js/main.c62b72f6.js.map",
+    "main.00b7492e.js.map": "/static/js/main.00b7492e.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.201444bd.css",
-    "static/js/main.c62b72f6.js"
+    "static/js/main.00b7492e.js"
   ]
 }
