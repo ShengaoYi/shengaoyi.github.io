@@ -116,12 +116,14 @@ const About = () => (
               <li>Nature Health</li>
               <li>Computers, Environment and Urban Systems</li>
               <li>Sustainable Cities and Society</li>
-              <li>Scientific Data</li>
+              <li>Cities</li>
+              <li>Building and Environment</li>
+              <li>International Journal of Applied Earth Observation and Geoinformation</li>
               <li>International Journal of Digital Earth</li>
               <li>Applied Geography</li>
               <li>Journal of Transport Geography</li>
               <li>Travel Behaviour and Society</li>
-              <li>Computational Urban Science</li>
+              <li>Habitat International</li>
               <li>and so on...</li>
             </ul>
           </div>
