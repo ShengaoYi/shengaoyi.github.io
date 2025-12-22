@@ -24,6 +24,7 @@ import GSM_UTCI from './images/GSM_UTCI.jpg';
 import Seasonal_bias from './images/Seasonal.png';
 import HFPCS from './images/HFPCS.png';
 import UTCI from './images/UTCI.jpg';
+import DyGNN from './images/MM-DyGNN.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -69,6 +70,15 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
+                <a href={'https://doi.org/10.1080/13658816.2025.2595655'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={DyGNN}
+                        title="Adaptive dynamic graph learning for forecasting urban multimodal flow"
+                        journal="Accepted by IJGIS"
+                        description="Urban multimodal flow, Dynamic graph neural network, Cross-modal interaction, Multitask learning, learning, Spatiotemporal modeling">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1016/j.ufug.2025.129101'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
