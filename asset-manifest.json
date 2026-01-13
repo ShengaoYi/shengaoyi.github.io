@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.201444bd.css",
-    "main.js": "/static/js/main.7eb29180.js",
+    "main.js": "/static/js/main.19ad04ad.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/UTCI.jpg": "/static/media/UTCI.d19eb8e18d901debf160.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
@@ -23,6 +23,7 @@
     "static/media/Framework.jpg": "/static/media/Framework.0dfaa6033da66753618a.jpg",
     "static/media/Seasonal.png": "/static/media/Seasonal.ba0788d4da4a80a1e2c4.png",
     "static/media/ServiceArea.png": "/static/media/ServiceArea.5829795b5456acf06683.png",
+    "static/media/JTG_Framework.jpg": "/static/media/JTG_Framework.d13c4b996003b517496c.jpg",
     "static/media/Homeless.png": "/static/media/Homeless.de7893ea5f1a6ff911b2.png",
     "static/media/Solar_LCZ.jpg": "/static/media/Solar_LCZ.57384d087591bf7a5900.jpg",
     "static/media/Homelessness.jpg": "/static/media/Homelessness.3fc10276a21f6f5c3af9.jpg",
@@ -59,11 +60,11 @@
     "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
     "main.201444bd.css.map": "/static/css/main.201444bd.css.map",
-    "main.7eb29180.js.map": "/static/js/main.7eb29180.js.map",
+    "main.19ad04ad.js.map": "/static/js/main.19ad04ad.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.201444bd.css",
-    "static/js/main.7eb29180.js"
+    "static/js/main.19ad04ad.js"
   ]
 }
