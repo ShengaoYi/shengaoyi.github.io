@@ -25,6 +25,8 @@ import Seasonal_bias from './images/Seasonal.png';
 import HFPCS from './images/HFPCS.png';
 import UTCI from './images/UTCI.jpg';
 import DyGNN from './images/MM-DyGNN.jpg';
+import JTG from './images/JTGFrameWork.png';
+import Soundscape from './images/Soundscape.jpg';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -70,6 +72,24 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
+                 <a href={'https://doi.org/10.1016/j.compenvurbsys.2026.102412'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={Soundscape}
+                        title="Decoding urban soundscapes: spatial prediction and influence mechanism analysis with interpretable semi-supervised learning"
+                        journal="Accepted by Computers, Environment and Urban Systems"
+                        description="Urban soundscape, Sound level prediction, Sound source classification, Interpretable machine learning, Semi-supervised learning">
+                    </MyCard>
+                </a>
+                 <a href={'https://doi.org/10.1016/j.jtrangeo.2026.104553'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={JTG}
+                        title="Assessing nighttime homeless shelter accessibility and its socioeconomic associations in Los Angeles"
+                        journal="Accepted by Journal of Transport Geography"
+                        description="Homeless shelters, Accessibility, G2SFCA, Geographically weighted regression, Spatial analysis">
+                    </MyCard>
+                </a>
                 <a href={'https://doi.org/10.1080/13658816.2025.2595655'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable

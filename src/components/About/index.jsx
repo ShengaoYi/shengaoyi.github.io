@@ -28,7 +28,7 @@ const About = () => (
           </Button>
       </div>
       <section>
-          <p style={{fontSize: 17}}>Shengao Yi (he/his) is a Ph.D. student in City & Regional Planning at the University of Pennsylvania Weitzman School of Design, concentrating on landscape planning and urban analytics. He is also a graduate researcher at the Urban Spatial Informatics Lab led by Professor Xiaojiang Li, aiming to combine Science, Data, and Design together to tackle the pressing urban challenges through the collaboration with communities.</p>
+          <p style={{fontSize: 17}}>Shengao Yi (he/his) is a Ph.D. student in City & Regional Planning and Penn AI Fellow at the University of Pennsylvania Weitzman School of Design, concentrating on landscape planning and urban analytics. He is also a graduate researcher at the Urban Spatial Informatics Lab led by Professor Xiaojiang Li, aiming to combine Science, Data, and Design together to tackle the pressing urban challenges through the collaboration with communities.</p>
           <p style={{fontSize: 17}}>His research focuses on the AI for landscape/environmental planning, optimization and design, urban microclimate modeling, micro-scale urban analytics, and GeoAI. Aspiring to an academic career, he is dedicated to addressing socio-environmental challenges by developing innovative AI-driven approaches to mitigate urban heat effects, optimize green infrastructure, and enhance urban resilience.</p>
           <h2>Education</h2>
           <div className="resume-item">
@@ -55,6 +55,10 @@ const About = () => (
       </section>
       <section>
           <h2>Previous employment</h2>
+          <div className="resume-item">
+              <div className="resume-item-title"><a href="https://ai.upenn.edu/penn-ai-fellows" target="_blank" rel="noopener noreferrer"> Penn AI Fellow </a></div>
+              <div className="resume-item-time">2026/01–</div>
+          </div>
           <div className="resume-item">
               <div className="resume-item-title">Associate Fellow at <a href="https://ldi.upenn.edu/fellows/fellows-directory/shengao-yi/" target="_blank" rel="noopener noreferrer">Leonard Davis Institute of Health Economics (Penn LDI)</a></div>
               <div className="resume-item-time">2024/12–</div>
@@ -114,6 +118,7 @@ const About = () => (
             <h2>Reviewed Journals</h2>
             <ul>
               <li>Nature Health</li>
+              <li>Nature Communications</li>
               <li>Computers, Environment and Urban Systems</li>
               <li>Sustainable Cities and Society</li>
               <li>Cities</li>
