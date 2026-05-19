@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { Button } from 'antd';
 import { GithubOutlined, LinkedinOutlined, MailOutlined, FileTextOutlined } from '@ant-design/icons';
-import CV from './Shengao_Yi_CV.pdf';
+import CV from './Shengao_CV_202605.pdf';
 import { FaGraduationCap } from 'react-icons/fa';
 
 const About = () => (
