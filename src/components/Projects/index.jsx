@@ -27,6 +27,7 @@ import UTCI from './images/UTCI.jpg';
 import DyGNN from './images/MM-DyGNN.jpg';
 import JTG from './images/JTGFrameWork.png';
 import Soundscape from './images/Soundscape.jpg';
+import PLOS from './images/PLOS.PNG';
 import logit from './images/Logit.png';
 import farm from './images/Farms.png';
 import Kmeans from './images/Kmeans.png';
@@ -79,6 +80,15 @@ const Projects = () => (
                         title="Decoding urban soundscapes: spatial prediction and influence mechanism analysis with interpretable semi-supervised learning"
                         journal="Accepted by Computers, Environment and Urban Systems"
                         description="Urban soundscape, Sound level prediction, Sound source classification, Interpretable machine learning, Semi-supervised learning">
+                    </MyCard>
+                </a>
+                <a href={'https://doi.org/10.1371/journal.pone.0341844'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={PLOS}
+                        title="Developing a machine learning model to map new-build gentrification: A mixed-methods approach"
+                        journal="Accepted by PLOS One"
+                        description="Build gentrification, Street view images, Machine learning, ">
                     </MyCard>
                 </a>
                  <a href={'https://doi.org/10.1016/j.jtrangeo.2026.104553'} target="_blank" rel="noopener noreferrer">

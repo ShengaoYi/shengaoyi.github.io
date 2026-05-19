@@ -56,6 +56,10 @@ const About = () => (
       <section>
           <h2>Previous employment</h2>
           <div className="resume-item">
+              <div className="resume-item-title">Ivy Plus Exchange Scholar at <a href="https://senseable.mit.edu/" target="_blank" rel="noopener noreferrer"> MIT Senseable City Lab </a>, working with Dr. Paolo Santi and Dr. Carlo Ratti.</div>
+              <div className="resume-item-time">2026/06–</div>
+          </div>
+          <div className="resume-item">
               <div className="resume-item-title"><a href="https://ai.upenn.edu/penn-ai-fellows" target="_blank" rel="noopener noreferrer"> Penn AI Fellow </a></div>
               <div className="resume-item-time">2026/01–</div>
           </div>
@@ -119,6 +123,7 @@ const About = () => (
             <ul>
               <li>Nature Health</li>
               <li>Nature Communications</li>
+              <li>Nature Cities</li>
               <li>Computers, Environment and Urban Systems</li>
               <li>Sustainable Cities and Society</li>
               <li>Cities</li>
