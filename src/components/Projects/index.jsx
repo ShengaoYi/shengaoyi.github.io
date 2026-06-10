@@ -28,21 +28,14 @@ import DyGNN from './images/MM-DyGNN.jpg';
 import JTG from './images/JTGFrameWork.png';
 import Soundscape from './images/Soundscape.jpg';
 import PLOS from './images/PLOS.PNG';
-import logit from './images/Logit.png';
-import farm from './images/Farms.png';
-import Kmeans from './images/Kmeans.png';
-import bike from './images/Bike.png';
-import risk from './images/Risk.png';
-import subsidy from './images/Subsidy.png';
 import DRL from './images/DRL_framework.png';
 import DRL_paper from './publications/DRL.pdf';
-import Frequent_street from './images/Frequent_street.png';
 
 const {Content} = Layout;
 
 const Projects = () => (
     <div className="content-centered">
-        <Content style={{margin: '24px 16px', padding: 24, background: "black"}}>
+        <Content className="work-content">
             <Divider id="data-analytics" orientation="left" className="dynamic-font-divider">Data Analytics</Divider>
             <div className="image-grid">
                 <Link to="/RATScreener">

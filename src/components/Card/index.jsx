@@ -1,20 +1,17 @@
 import React from "react";
-import {Card} from 'antd';
 import './index.css';
-const {Meta} = Card;
 
 const MyCard = (props) => (
-  <>
+  <article className="work-card">
       <div className="card-img-container">
             <img src={props.imageUrl} alt="Project" className="card-img" />
       </div>
-      <div style={{ paddingLeft: '5px', paddingRight: '5px', flex: 1 }}>
-          <div className="image-title">{props.title}
-              {props.journal && <div className="journal">{props.journal}</div>}
-          </div>
+      <div className="work-card-body">
+          <h3 className="image-title">{props.title}</h3>
+          {props.journal && <div className="journal">{props.journal}</div>}
           <div className="image-subject">{props.description}</div>
       </div>
-  </>
+  </article>
 );
 
 export default MyCard;

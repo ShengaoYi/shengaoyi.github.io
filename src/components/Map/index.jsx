@@ -1,26 +1,26 @@
-import React, {useRef, useEffect, useState} from 'react';
+import React, {useRef, useEffect} from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import './index.css';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoieWVzZW5pYW8iLCJhIjoiY2xrMjhwOWczMDBpYzNlcXBsanZmaDhjdCJ9.9dLoG5t_-OMelTBRWdlKRw';
 
+const INITIAL_CENTER = [-80.5795, 39.828];
+const INITIAL_ZOOM = 1.5;
+const MAP_BOUNDS = [
+    [-210, -30],
+    [150, 70],
+];
+
 export default function Map() {
     const mapContainer = useRef(null);
-    const [lng, setLng] = useState(-80.5795);
-    const [lat, setLat] = useState(39.828);
-    const [zoom, setZoom] = useState(1.5);
-    const [bounds] = useState([
-        [-210, -30], // Southwest coordinates
-        [150, 70] // Northeast coordinates
-    ]);
 
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: mapContainer.current,
             style: "mapbox://styles/mapbox/dark-v11",
-            center: [lng, lat],
-            zoom: zoom,
-            maxBounds: bounds,
+            center: INITIAL_CENTER,
+            zoom: INITIAL_ZOOM,
+            maxBounds: MAP_BOUNDS,
         });
         const size = 120;
         // This implements `StyleImageInterface`

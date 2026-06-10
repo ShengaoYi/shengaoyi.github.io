@@ -120,3 +120,14 @@
     height: 1px;
     background-color: white;
 }
+
+.custom-footer {
+    text-align: center;
+    color: #dce4df;
+    background: #080b0d;
+    border-top: 1px solid transparent;
+}
+
+.custom-footer::before {
+    background-color: rgba(255, 255, 255, 0.16);
+}
