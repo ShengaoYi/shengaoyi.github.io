@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5832bb0e.css",
-    "main.js": "/static/js/main.23d7af62.js",
+    "main.js": "/static/js/main.133bf356.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/UTCI.jpg": "/static/media/UTCI.d19eb8e18d901debf160.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
@@ -17,8 +17,10 @@
     "static/media/HFPCS.png": "/static/media/HFPCS.b7894185fd62ef5f94b6.png",
     "static/media/Solar.png": "/static/media/Solar.5c6cc628a81d5ff821a5.png",
     "static/media/LA_MRT_Albedo_Grid.jpg": "/static/media/LA_MRT_Albedo_Grid.aac75b17248fcba9ea87.jpg",
+    "static/media/Heat_Cyclist.png": "/static/media/Heat_Cyclist.0df5941e2d9b3d9517e1.png",
     "static/media/GI_Planning.jpg": "/static/media/GI_Planning.20a43eb34ce48093097a.jpg",
     "static/media/MM-DyGNN.jpg": "/static/media/MM-DyGNN.cc8d42638e2c74c5cd2d.jpg",
+    "static/media/LST_UTCI.jpg": "/static/media/LST_UTCI.44405cd6f06d26d02412.jpg",
     "static/media/Waste.jpg": "/static/media/Waste.347ff237871caddb79ac.jpg",
     "static/media/Framework.jpg": "/static/media/Framework.0dfaa6033da66753618a.jpg",
     "static/media/PLOS.PNG": "/static/media/PLOS.ce37a0fd42798411703f.PNG",
@@ -37,10 +39,12 @@
     "static/media/SVG.jpg": "/static/media/SVG.046e57853d4962078c08.jpg",
     "static/media/DRL_framework.png": "/static/media/DRL_framework.3c377f3f7c4effcb06b9.png",
     "static/media/StreetView.jpg": "/static/media/StreetView.33d5b553ff1d76deaaee.jpg",
+    "static/media/LMEMR.png": "/static/media/LMEMR.a212b9227e8450cb7d7d.png",
     "static/media/Interaction_Green_Albedo.jpg": "/static/media/Interaction_Green_Albedo.57d0b6b4e532801515d7.jpg",
     "static/media/Built_environment_Interaction.jpg": "/static/media/Built_environment_Interaction.de0c04c5f9062cb01d83.jpg",
     "static/media/pgRouting.png": "/static/media/pgRouting.32f333bb6ad228917eec.png",
     "static/media/TOD.jpg": "/static/media/TOD.5ac7c0ed6f8ac7011f3f.jpg",
+    "static/media/PV.jpg": "/static/media/PV.b8d6700a5bb1b0982deb.jpg",
     "static/media/Fire1.png": "/static/media/Fire1.84a56e61f159c5626e92.png",
     "static/media/Shengao_CV_202605.pdf": "/static/media/Shengao_CV_202605.abbad327784733845870.pdf",
     "static/media/NPE.jpg": "/static/media/NPE.a4c73bde36960a5bf36f.jpg",
@@ -52,11 +56,11 @@
     "static/media/markdown.png": "/static/media/markdown.562717da215e9455bac9.png",
     "index.html": "/index.html",
     "main.5832bb0e.css.map": "/static/css/main.5832bb0e.css.map",
-    "main.23d7af62.js.map": "/static/js/main.23d7af62.js.map",
+    "main.133bf356.js.map": "/static/js/main.133bf356.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5832bb0e.css",
-    "static/js/main.23d7af62.js"
+    "static/js/main.133bf356.js"
   ]
 }
