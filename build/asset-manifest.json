@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.201444bd.css",
-    "main.js": "/static/js/main.d3610c47.js",
+    "main.css": "/static/css/main.5832bb0e.css",
+    "main.js": "/static/js/main.23d7af62.js",
     "static/js/453.825b45cc.chunk.js": "/static/js/453.825b45cc.chunk.js",
     "static/media/UTCI.jpg": "/static/media/UTCI.d19eb8e18d901debf160.jpg",
     "static/media/Solar1.png": "/static/media/Solar1.bb87b47ae2436f6f991a.png",
@@ -45,28 +45,18 @@
     "static/media/Shengao_CV_202605.pdf": "/static/media/Shengao_CV_202605.abbad327784733845870.pdf",
     "static/media/NPE.jpg": "/static/media/NPE.a4c73bde36960a5bf36f.jpg",
     "static/media/Rats.png": "/static/media/Rats.0bbceb7f27154afdf6a7.png",
-    "static/media/Farms.png": "/static/media/Farms.1fd3d7f1a0498154011e.png",
     "static/media/ParkEntrance.jpg": "/static/media/ParkEntrance.d7c544a12ec608520418.jpg",
     "static/media/RatsProcess.png": "/static/media/RatsProcess.d9b6a12f4aa82d7aee8c.png",
-    "static/media/Avatar.jpg": "/static/media/Avatar.680f0f92e3f2e982f03d.jpg",
-    "static/media/Frequent_street.png": "/static/media/Frequent_street.4a93f05b12a2527b97c5.png",
     "static/media/Fire2.png": "/static/media/Fire2.1113343454d873fd8ad7.png",
-    "static/media/Subsidy.png": "/static/media/Subsidy.d554ade8d27787851f2a.png",
     "static/media/Rats_logo.png": "/static/media/Rats_logo.fc6e4038c55652e57d92.png",
-    "static/media/Bike.png": "/static/media/Bike.b3575ce7fb6d3fdc8c14.png",
-    "static/media/Kmeans.png": "/static/media/Kmeans.d79332e491044d84da9b.png",
-    "static/media/Logit.png": "/static/media/Logit.c9282ce247cac6ad89fc.png",
-    "static/media/Risk.png": "/static/media/Risk.b09409ba2a7683976fe7.png",
     "static/media/markdown.png": "/static/media/markdown.562717da215e9455bac9.png",
-    "static/media/LI.png": "/static/media/LI.a95afc06831647f5fca2.png",
-    "static/media/email.jpg": "/static/media/email.4cab62df1bf221ce1837.jpg",
     "index.html": "/index.html",
-    "main.201444bd.css.map": "/static/css/main.201444bd.css.map",
-    "main.d3610c47.js.map": "/static/js/main.d3610c47.js.map",
+    "main.5832bb0e.css.map": "/static/css/main.5832bb0e.css.map",
+    "main.23d7af62.js.map": "/static/js/main.23d7af62.js.map",
     "453.825b45cc.chunk.js.map": "/static/js/453.825b45cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.201444bd.css",
-    "static/js/main.d3610c47.js"
+    "static/css/main.5832bb0e.css",
+    "static/js/main.23d7af62.js"
   ]
 }

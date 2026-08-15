@@ -51,8 +51,12 @@ const About = () => (
           <div className="about-card">
               <h3>Current</h3>
               <div className="resume-item">
+                  <div className="resume-item-title">Penn Climate Scholar</div>
+                  <div className="resume-item-time">2026/08-</div>
+              </div>
+              <div className="resume-item">
                   <div className="resume-item-title">Ivy Plus Exchange Scholar, MIT Senseable City Lab</div>
-                  <div className="resume-item-time">2026/06-</div>
+                  <div className="resume-item-time">2026/08-</div>
               </div>
               <div className="resume-item">
                   <div className="resume-item-title">Penn AI Fellow</div>

@@ -29,6 +29,10 @@ import JTG from './images/JTGFrameWork.png';
 import Soundscape from './images/Soundscape.jpg';
 import PLOS from './images/PLOS.PNG';
 import DRL from './images/DRL_framework.png';
+import PV from './images/PV.jpg';
+import LMEMR from './images/LMEMR.png';
+import LST_UTCI from './images/LST_UTCI.jpg';
+import Cyclist from './images/Heat_Cyclist.png';
 import DRL_paper from './publications/DRL.pdf';
 
 const {Content} = Layout;
@@ -66,7 +70,52 @@ const Projects = () => (
             <br/>
             <Divider id="researches" orientation="left" className="dynamic-font-divider">Publications</Divider>
             <div className="image-grid">
-                 <a href={'https://doi.org/10.1016/j.compenvurbsys.2026.102412'} target="_blank" rel="noopener noreferrer">
+                <a href={'https://www.nature.com/articles/s44432-026-00015-3'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={Cyclist}
+                        title="High-resolution urban microclimate modeling reveals hyperlocal cycling heat stress disparities in New York City"
+                        journal="Accepted by npj Environmental Social Sciences"
+                        description="UTCI, Cycling behaviour, Microclimate modeling, Heat exposure disparity">
+                    </MyCard>
+                </a>
+                <a href={'https://doi.org/10.1016/j.scs.2026.107659'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={LST_UTCI}
+                        title="From physical surfaces to human-centric heat stress: LST and UTCI heat mapping reveals nonlinear effects of urban morphology"
+                        journal="Accepted by Sustainable Cities and Society"
+                        description="UTCI, Urban morphology, GeoAI, Spatial heterogeneity, Climate-adaptive planning">
+                    </MyCard>
+                </a>
+                <a href={'https://doi.org/10.1016/j.enbuild.2026.117929'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={PV}
+                        title="Unravelling nonlinear effects of urban morphology on rooftop PV adoption using explainable machine learning"
+                        journal="Accepted by Energy and Buildings"
+                        description="Urban morphology, Rooftop photovoltaic, Realistic adoption, Built environment, Installed panel">
+                    </MyCard>
+                </a>
+                <a href={'https://doi.org/10.1080/13658816.2025.2595655'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={DyGNN}
+                        title="Adaptive dynamic graph learning for forecasting urban multimodal flow"
+                        journal="Accepted by International Journal of Geographical Information Science"
+                        description="Urban multimodal flow, Dynamic graph neural network, Cross-modal interaction, Multitask learning, Spatiotemporal modeling">
+                    </MyCard>
+                </a>
+                <a href={'https://ieeexplore.ieee.org/document/11540094'} target="_blank" rel="noopener noreferrer">
+                    <MyCard
+                        hoverable
+                        imageUrl={LMEMR}
+                        title="Learning fine-grained urban mobility dynamics through large model-enhanced multimodal representations"
+                        journal="Accepted by IEEE Transactions on Intelligent Transportation Systems"
+                        description="Urban mobility prediction, Multimodal learning,Vision–language models, Contrastive learning, Graph attention networks">
+                    </MyCard>
+                </a>
+                <a href={'https://doi.org/10.1016/j.compenvurbsys.2026.102412'} target="_blank" rel="noopener noreferrer">
                     <MyCard
                         hoverable
                         imageUrl={Soundscape}
